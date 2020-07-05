@@ -1,0 +1,99 @@
+// Vars
+$blackColor: #333333
+$mainColor1: #C1433C
+$mainColor2: #438A5E
+$grayColor: #AFAFAF
+$lightGrayColor: #C4C4C4
+$whiteColor: #FFFFFF
+
+// Fonts
+@font-face 
+    font-family: 'Colus'
+    src: url('../fonts/Colus_Regular.eot')
+    src: url('../fonts/Colus_Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Colus_Regular.woff2') format('woff2'), url('../fonts/Colus_Regular.woff') format('woff'), url('../fonts/Colus_Regular.svg#Colus_Regular') format('svg')
+    font-weight: 400
+    font-style: normal
+    font-stretch: normal
+    unicode-range: U+0020-00FE
+
+@font-face 
+    font-family: 'Ubuntu'
+    src: url('../fonts/Ubuntu_Regular.eot')
+    src: url('../fonts/Ubuntu_Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Ubuntu_Regular.woff2') format('woff2'), url('../fonts/Ubuntu_Regular.woff') format('woff'), url('../fonts/Ubuntu_Regular.svg#Ubuntu_Regular') format('svg')
+    font-weight: 400
+    font-style: normal
+    font-stretch: normal
+    unicode-range: U+0020-00FE
+    
+* 
+    box-sizing: border-box
+
+body 
+    margin: 0
+
+.wrap
+    padding: 0 100px 0 100px
+    background-color: white
+    width: 100%
+    height: 100vh
+
+.header
+    background-color: $whiteColor
+    padding: 60px 0 0 0
+    width: 100%
+
+    .menu
+        display: flex
+        justify-content: space-between
+        
+        .menu__music
+            height: 25px
+            line-height: 25px
+            overflow: hidden
+            white-space: nowrap
+            color: $mainColor1
+            font-size: 28px
+            text-transform: uppercase
+            font-family: 'Ubuntu', sans-serif
+
+            &:active
+                color: #fff
+                text-decoration: none
+            
+            .menu__note
+                display: inline-block
+                position: relative
+                transition: transform 0.3s
+
+                &::before
+                    display: inline-block
+                    width: 100%
+                    height: 100%
+                    content: attr(data-hover)
+                    position: absolute
+                    left: 0
+                    top: 100%
+                    transform: translate3d(0,0,0,)                
+                    color: #438A5E
+
+            .menu__note_action
+                transform: translateY(-100%)
+
+.main
+    background-color: $whiteColor
+
+    .welcome
+        &__general
+            font-family: Colus
+            font-style: normal
+            font-weight: normal
+            font-size: 120px
+            line-height: 110%
+        &__info
+            font-family: Ubuntu
+            font-style: normal
+            font-weight: 300
+            font-size: 28px
+            line-height: 40px
+
+    

@@ -1,0 +1,114 @@
+@font-face {
+  font-family: 'Colus';
+  src: url("../fonts/Colus_Regular.eot");
+  src: url("../fonts/Colus_Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Colus_Regular.woff2") format("woff2"), url("../fonts/Colus_Regular.woff") format("woff"), url("../fonts/Colus_Regular.svg#Colus_Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-00FE;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("../fonts/Ubuntu_Regular.eot");
+  src: url("../fonts/Ubuntu_Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Ubuntu_Regular.woff2") format("woff2"), url("../fonts/Ubuntu_Regular.woff") format("woff"), url("../fonts/Ubuntu_Regular.svg#Ubuntu_Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-00FE;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.wrap {
+  padding: 0 100px 0 100px;
+  background-color: white;
+  width: 100%;
+  height: 100vh;
+}
+
+.header {
+  background-color: #FFFFFF;
+  padding: 60px 0 0 0;
+  width: 100%;
+}
+
+.header .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .menu .menu__music {
+  height: 25px;
+  line-height: 25px;
+  overflow: hidden;
+  white-space: nowrap;
+  color: #C1433C;
+  font-size: 28px;
+  text-transform: uppercase;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.header .menu .menu__music:active {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header .menu .menu__music .menu__note {
+  display: inline-block;
+  position: relative;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.header .menu .menu__music .menu__note::before {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  content: attr(data-hover);
+  position: absolute;
+  left: 0;
+  top: 100%;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  color: #438A5E;
+}
+
+.header .menu .menu__music .menu__note_action {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.main {
+  background-color: #FFFFFF;
+}
+
+.main .welcome__general {
+  font-family: Colus;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 120px;
+  line-height: 110%;
+}
+
+.main .welcome__info {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 40px;
+}
+/*# sourceMappingURL=style.css.map */
