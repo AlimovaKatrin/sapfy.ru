@@ -1,0 +1,36 @@
+.menu
+    display: flex
+    justify-content: space-between
+    
+    .menu__music
+        height: 2.5rem
+        line-height: 25px
+        overflow: hidden
+        white-space: nowrap
+        color: $mainColor1
+        font-size: 2.8rem
+        text-transform: uppercase
+        font-family: 'Ubuntu Light', sans-serif
+
+        &:active
+            color: #fff
+            text-decoration: none
+        
+        .menu__note
+            display: inline-block
+            position: relative
+            transition: transform 0.3s
+
+            &::before
+                display: inline-block
+                width: 100%
+                height: 100%
+                content: attr(data-hover)
+                position: absolute
+                left: 0
+                top: 100%
+                transform: translate3d(0,0,0,)                
+                color: #438A5E
+
+        .menu__note_action
+            transform: translateY(-100%)

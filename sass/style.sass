@@ -1,33 +1,30 @@
-// Vars
-$blackColor: #333333
-$mainColor1: #C1433C
-$mainColor2: #438A5E
-$grayColor: #AFAFAF
-$lightGrayColor: #C4C4C4
-$whiteColor: #FFFFFF
-
-// Fonts
-@font-face 
-    font-family: 'Colus'
-    src: url('../fonts/Colus_Regular.ttf') format('truetype')
-    font-weight: 400
-    font-style: normal
-    font-stretch: normal
-    unicode-range: U+0020-0491
-
-@font-face 
-    font-family: 'Ubuntu'
-    src: url('../fonts/Ubuntu_Regular.ttf') format('truetype')
-    font-weight: 400
-    font-style: normal
-    font-stretch: normal
-    unicode-range: U+0020-00FE
+@import "vars"
+@import "fonts"
     
 * 
     box-sizing: border-box
 
+*::selection
+    background: $lightGrayColor
+
+html
+    font-size: 10px
+
 body 
     margin: 0
+    overflow-x: hidden
+
+    &::-webkit-scrollbar 
+        width: 10px
+        background-color: #fff
+        border-radius: 5px
+
+    &::-webkit-scrollbar-track 
+        background-color: #fff
+
+    &::-webkit-scrollbar-thumb 
+        background-color: #afafaf
+        border-radius: 10px        
 
 .wrap
     padding: 0 100px 0 100px
@@ -40,127 +37,58 @@ body
     padding: 60px 0 0 0
     width: 100%
 
-    .menu
-        display: flex
-        justify-content: space-between
-        
-        .menu__music
-            height: 25px
-            line-height: 25px
-            overflow: hidden
-            white-space: nowrap
-            color: $mainColor1
-            font-size: 28px
-            text-transform: uppercase
-            font-family: 'Ubuntu', sans-serif
-
-            &:active
-                color: #fff
-                text-decoration: none
-            
-            .menu__note
-                display: inline-block
-                position: relative
-                transition: transform 0.3s
-
-                &::before
-                    display: inline-block
-                    width: 100%
-                    height: 100%
-                    content: attr(data-hover)
-                    position: absolute
-                    left: 0
-                    top: 100%
-                    transform: translate3d(0,0,0,)                
-                    color: #438A5E
-
-            .menu__note_action
-                transform: translateY(-100%)
-
 .main
     background-color: $whiteColor
 
-    .first-section
-        padding: 350px 0 100px 0
+.stack 
+    padding: 100px 0 0 0
 
-        .welcome
+    .stack-block
 
-            &__general
+        &__title
+            font-family: Colus
+            font-style: normal
+            font-weight: normal
+            font-size: 12rem
+            line-height: 110%
+
+        &__info
+            font-family: Ubuntu Light
+            font-style: normal
+            font-weight: 300
+            font-size: 2.8rem
+            line-height: 4rem
+            margin: 0 0 6rem 0
+
+        .stack-item
+            display: flex
+            align-items: center
+            justify-content: space-between
+            margin: 0 0 3rem 0
+            padding: 0            
+
+            &__title
                 font-family: Colus
                 font-style: normal
                 font-weight: normal
-                font-size: 120px
-                line-height: 110%
-            &__info
+                font-size: 6.4rem
+                line-height: 8rem
+
+        .block-age
+
+            &__item
                 font-family: Ubuntu
                 font-style: normal
                 font-weight: 300
-                font-size: 28px
-                line-height: 40px
+                font-size: 2.4rem
+                line-height: 2.8rem
+                color: $grayColor        
 
-        .links
-
-            &__social
-                color: $mainColor1
-                font-family: 'Ubuntu'
-                font-style: normal
-                font-weight: 300
-                font-size: 24px
-                line-height: 28px
-                margin-right: 40px
-
-    .section
-        padding: 100px 0 100px 0
-        height: 1160px        
-
-        .image
-            height: 900px
-
-            .image__item
-                background-image: url('../img/image.png')
-                width: 100%
-                height: 100%
-
-.block
-
-    &__date
-        font-family: 'Ubuntu'
-        font-style: normal
-        font-weight: 300
-        font-size: 24px
-        line-height: 28px
-
-    &__title
-        font-family: Colus
-        font-style: normal
-        font-weight: normal
-        font-size: 64px
-        line-height: 80px
-
-    &__info
-        font-family: 'Ubuntu'
-        font-style: normal
-        font-weight: 300
-        font-size: 28px
-        line-height: 40px
-
-.block-tags
-
-
-    &__item
-        font-family: Ubuntu
-        font-style: normal
-        font-weight: 300
-        font-size: 24px
-        line-height: 28px        
-        color: $grayColor
-        margin-right: 40px
-
-        &:last-child
-            margin-right: 0
-
-            
-
-.mini-section
-    border-bottom: 0.5px solid $lightGrayColor
-    
+@import "menu"
+@import "first-section"
+@import "links"
+@import "section"
+@import "block"
+@import "mini-section"
+@import "block-tags"
+@import "footer"
