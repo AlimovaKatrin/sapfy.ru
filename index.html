@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" \>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Sapfy — UX/UI дизайнер</title>
-    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="icon" type="image/png" href="favicon.png">
 </head>
 
 <body>
@@ -62,25 +62,26 @@
                         </section>
                     </div>
 
-                    <div class="col-6">
-                        <div id="scene" class="scene">
-                            <div data-depth="1.00">
-                                <img src="image-1.png">
+                    <div class="col-6 d-none d-sm-block">
+                        <div id="scene-one" class="scene scene-one">
+                            <div data-depth-x="-0.90" data-depth-y="-1.0">
+                                <img class="scene-one__birds" src="./img/birds.png">
                             </div>
-                            <div data-depth-x="0.80" data-depth-y="-0.80">
-                                <img src="image-2.png">
+
+                            <div data-depth-x="-0.40" data-depth-y="-1.0">
+                                <img class="sun scene-one__sun" src="./img/sun.png">
                             </div>
-                            <div data-depth-x="-0.60" data-depth-y="-0.20">
-                                <img src="./img/Group_3.png">
+
+                            <div data-depth="0.60" data-depth-y="-0.30" data-depth-x="-0.30">
+                                <img class="scene-one__bg-one" src="./img/bg_3.png">
                             </div>
-                            <div data-depth="0.40" data-depth-y="-0.30">
-                                <img src="./img/Group_4.png">
+
+                            <div data-depth="0.40" data-depth-y="-0.30" data-depth-x="1">
+                                <img class="scene-one__bg-two" src="./img/bg_2.png">
                             </div>
-                            <div data-depth="0.20">
-                                <img src="image-5.png">
-                            </div>
-                            <div data-depth="0.00">
-                                <img src="image-6.png">
+
+                            <div data-depth="0.80" data-depth-y="-0.30" data-depth-x="-0.50">
+                                <img class="scene-one__bg-three" src="./img/bg_1.png">
                             </div>
                         </div>
                     </div>
@@ -224,7 +225,19 @@
 
             <section class="stack">
                 <div class="row">
-                    <div class="col-6 offset-6 stack-block">
+
+                    <div class="col-6">
+                        <div id="scene-two" class="scene scene-two">
+                            <div data-depth-x="-0.60" data-depth-y="-1.50">
+                                <img class="scene-two__bg" src="./img/bg_4.png">
+                            </div>
+                            <div data-depth="0.80" data-depth-y="1.80">
+                                <img class="scene-two__ship" src="./img/ship.png">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 stack-block">
                         <h2 class="stack-block__title">Stack</h2>
                         <p class="stack-block__info">Привет, я Света — UX/UI дизайнер из Санкт-Петербурга. Для меня
                             важно это и это, а еще я делаю это и это.</p>
@@ -276,15 +289,13 @@
                         <p class="copyright__item">Development — Zzaaf, Sapfy</p>
                     </section>
                 </div>
-    
+
                 <div class="col-6">
                     <section class="d-flex justify-content-end links">
                         <a href="https://t.me/Sapfy" target="_blank" class="links__social">telegram</a>
-                        <a href="https://www.instagram.com/sapfy/" target="_blank"
-                            class="links__social">instagram</a>
+                        <a href="https://www.instagram.com/sapfy/" target="_blank" class="links__social">instagram</a>
                         <a href="https://vk.me/vis.sapfy" target="_blank" class="links__social">vk</a>
-                        <a href="https://www.behance.net/vissapfy32b5" target="_blank"
-                            class="links__social">behance</a>
+                        <a href="https://www.behance.net/vissapfy32b5" target="_blank" class="links__social">behance</a>
                         <a href="https://codepen.io/Sapfy" target="_blank" class="links__social">codepen</a>
                     </section>
                 </div>
