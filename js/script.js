@@ -23,12 +23,18 @@ window.addEventListener("orientationchange", function () {
 });
 
 // "Note" button operation
-let note = document.querySelector('.menu__note');
+let note = document.querySelector('.menu__note'),
+    sun = document.querySelector('.sun');
 
 note.addEventListener('click', function () {
     note.classList.toggle('menu__note_action');
+    sun.classList.toggle('action');
 })
 
 // Parallax
-let scene = document.getElementById('scene');
-let parallax = new Parallax(scene);
+let sceneOne = document.getElementById('scene-one'),
+    sceneTwo = document.getElementById('scene-two'),
+    // parallaxOne = new Parallax(sceneOne, {        
+    //     relativeInput: true}), 
+    parallaxOne = new Parallax(sceneOne), 
+    parallaxTwo = new Parallax(sceneTwo);

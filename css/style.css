@@ -79,56 +79,16 @@ body::-webkit-scrollbar-thumb {
   background-color: #FFFFFF;
 }
 
-.stack {
-  padding: 100px 0 0 0;
+.action {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: 10s;
+  transition: 10s;
 }
 
-.stack .stack-block__title {
-  font-family: Colus;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12rem;
-  line-height: 110%;
-}
-
-.stack .stack-block__info {
-  font-family: Ubuntu Light;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 2.8rem;
-  line-height: 4rem;
-  margin: 0 0 6rem 0;
-}
-
-.stack .stack-block .stack-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 0 0 3rem 0;
-  padding: 0;
-}
-
-.stack .stack-block .stack-item__title {
-  font-family: Colus;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 6.4rem;
-  line-height: 8rem;
-}
-
-.stack .stack-block .block-age__item {
-  font-family: Ubuntu;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 2.4rem;
-  line-height: 2.8rem;
-  color: #AFAFAF;
+.sun {
+  -webkit-transition: 10s;
+  transition: 10s;
 }
 
 .menu {
@@ -203,6 +163,36 @@ body::-webkit-scrollbar-thumb {
   line-height: 4rem;
 }
 
+.scene-one__birds {
+  position: absolute;
+  right: 20rem;
+  bottom: 2rem;
+}
+
+.scene-one__sun {
+  position: absolute;
+  left: 29rem;
+  bottom: -5rem;
+}
+
+.scene-one__bg-one {
+  position: absolute;
+  top: -10rem;
+  left: -7rem;
+}
+
+.scene-one__bg-two {
+  position: absolute;
+  top: -25rem;
+  left: 3rem;
+}
+
+.scene-one__bg-three {
+  position: absolute;
+  top: -10rem;
+  left: 5rem;
+}
+
 .links__social {
   color: #C1433C;
   font-family: 'Ubuntu Light';
@@ -263,6 +253,70 @@ body::-webkit-scrollbar-thumb {
 .mini-section {
   border-bottom: 0.5px solid #C4C4C4;
   padding: 40px 0 40px 0;
+}
+
+.stack {
+  padding: 10rem 0 20rem 0;
+}
+
+.stack .stack-block__title {
+  font-family: Colus;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12rem;
+  line-height: 110%;
+}
+
+.stack .stack-block__info {
+  font-family: Ubuntu Light;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 2.8rem;
+  line-height: 4rem;
+  margin: 0 0 6rem 0;
+}
+
+.stack .stack-block .stack-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 0 3rem 0;
+  padding: 0;
+}
+
+.stack .stack-block .stack-item__title {
+  font-family: Colus;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 6.4rem;
+  line-height: 8rem;
+}
+
+.block-age__item {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  color: #AFAFAF;
+}
+
+.scene-two__bg {
+  position: absolute;
+  right: 4rem;
+  top: 15rem;
+}
+
+.scene-two__ship {
+  position: absolute;
+  top: 80rem;
+  left: 44.5rem;
 }
 
 .block-tags {
