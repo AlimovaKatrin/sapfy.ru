@@ -1,0 +1,73 @@
+.form-section
+    display: flex
+    flex-direction: row
+
+    .form
+
+        &__title
+            font-family: Ubuntu Light
+            font-size: 2.8rem
+            margin-bottom: 3rem
+
+            span
+                color: $mainColor1
+
+        .checkboxes
+            display: flex
+            flex-wrap: wrap
+        
+            .checkbox-item
+                width: 34.8rem
+                height: 8rem
+                margin: 0 5rem 5rem 0
+
+                .checkbox:not(:checked),
+                .checkbox:checked 
+                    position: absolute
+                    left: -9999px
+
+                .checkbox:not(:checked) + label,
+                .checkbox:checked + label 
+                    position: relative
+                    cursor: pointer
+
+                .checkbox:not(:checked) + label:before,
+                .checkbox:checked + label:before 
+                    content: attr(data-name)
+                    position: absolute
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    font-size: 2.8rem
+                    width: 34.8rem
+                    height: 8rem
+                    border: 0.5px solid #ccc
+                    background: $whiteColor
+                    border-radius: 10rem
+                    font-family: 'Ubuntu'                
+
+                .checkbox:not(:checked) + label:after,
+                .checkbox:checked + label:after 
+                    content: attr(data-name)
+                    position: absolute
+                    width: 34.8rem
+                    height: 8rem
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    font-size: 2.8rem
+                    color: $whiteColor
+                    background-color: $mainColor1
+                    border-radius: 10rem
+                    font-family: 'Ubuntu'     
+
+                .checkbox:not(:checked) + label:after 
+                    opacity: 0
+                    transform: scale(0)
+
+                .checkbox:checked + label:after 
+                    opacity: 1
+                    transform: scale(1)                
+
+                label:hover:before 
+                    border: 0.5px solid $mainColor1!important

@@ -375,6 +375,112 @@ a:hover {
   margin-right: 0;
 }
 
+.form-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.form-section .form__title {
+  font-family: Ubuntu Light;
+  font-size: 2.8rem;
+  margin-bottom: 3rem;
+}
+
+.form-section .form__title span {
+  color: #C1433C;
+}
+
+.form-section .form .checkboxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.form-section .form .checkboxes .checkbox-item {
+  width: 34.8rem;
+  height: 8rem;
+  margin: 0 5rem 5rem 0;
+}
+
+.form-section .form .checkboxes .checkbox-item .checkbox:not(:checked),
+.form-section .form .checkboxes .checkbox-item .checkbox:checked {
+  position: absolute;
+  left: -9999px;
+}
+
+.form-section .form .checkboxes .checkbox-item .checkbox:not(:checked) + label,
+.form-section .form .checkboxes .checkbox-item .checkbox:checked + label {
+  position: relative;
+  cursor: pointer;
+}
+
+.form-section .form .checkboxes .checkbox-item .checkbox:not(:checked) + label:before,
+.form-section .form .checkboxes .checkbox-item .checkbox:checked + label:before {
+  content: attr(data-name);
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2.8rem;
+  width: 34.8rem;
+  height: 8rem;
+  border: 0.5px solid #ccc;
+  background: #FFFFFF;
+  border-radius: 10rem;
+  font-family: 'Ubuntu';
+}
+
+.form-section .form .checkboxes .checkbox-item .checkbox:not(:checked) + label:after,
+.form-section .form .checkboxes .checkbox-item .checkbox:checked + label:after {
+  content: attr(data-name);
+  position: absolute;
+  width: 34.8rem;
+  height: 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2.8rem;
+  color: #FFFFFF;
+  background-color: #C1433C;
+  border-radius: 10rem;
+  font-family: 'Ubuntu';
+}
+
+.form-section .form .checkboxes .checkbox-item .checkbox:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.form-section .form .checkboxes .checkbox-item .checkbox:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.form-section .form .checkboxes .checkbox-item label:hover:before {
+  border: 0.5px solid #C1433C !important;
+}
+
 .footer {
   height: 42.5rem;
   padding: 100px 0 50px 0;
