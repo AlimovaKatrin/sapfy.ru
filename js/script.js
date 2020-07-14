@@ -28,16 +28,23 @@ let note = document.querySelector('.menu__note'),
 
 note.addEventListener('click', function () {
     note.classList.toggle('menu__note_action');
-    sun.classList.toggle('action');
+
+    if(sun != undefined) {
+        sun.classList.toggle('action');
+    }
+    
 })
 
 // Parallax
 let sceneOne = document.getElementById('scene-one'),
-    sceneTwo = document.getElementById('scene-two'),
+    sceneTwo = document.getElementById('scene-two');
     // parallaxOne = new Parallax(sceneOne, {        
     //     relativeInput: true}), 
-    parallaxOne = new Parallax(sceneOne),
-    parallaxTwo = new Parallax(sceneTwo);
+    if(sceneOne != undefined || sceneTwo != undefined) {
+        parallaxOne = new Parallax(sceneOne),
+        parallaxTwo = new Parallax(sceneTwo);
+    }
+
 
 // Scroll
 let isScrolling = false;

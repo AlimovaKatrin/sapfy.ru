@@ -6,8 +6,7 @@
 
         &__title
             font-family: Ubuntu Light
-            font-size: 2.8rem
-            margin-bottom: 3rem
+            font-size: 2.8rem           
 
             span
                 color: $mainColor1
@@ -71,3 +70,26 @@
 
                 label:hover:before 
                     border: 0.5px solid $mainColor1!important
+
+        &__input
+            width: 100%
+            border: none
+            border-bottom: 1px solid $grayColor
+            margin: 4rem 0 10rem 0
+            font-size: 3rem
+            outline: none
+
+            &:active, &:focus                
+                border-bottom: 2px solid $mainColor1
+                transition: .2s
+                outline: none
+
+        &__submit
+            font-family: Ubuntu
+            font-style: normal
+            font-weight: bold
+            font-size: 2.8rem
+            line-height: 3.5rem
+            color: $mainColor1
+            border: none
+            background: none

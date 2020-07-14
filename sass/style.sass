@@ -11,7 +11,7 @@ html
     font-size: 10px
 
 body 
-    margin: 0
+    margin: 0 auto
     overflow-x: hidden
 
     &::-webkit-scrollbar 
@@ -32,10 +32,12 @@ a
         color: $blackColor
 
 .wrap
-    padding: 0 100px 0 100px
+    // padding: 0 10rem 0 10rem
     background-color: white
-    width: 100%
+    width: calc(100% - 20rem)
+    margin: 0 auto
     height: 100vh
+    
 
 .header
     background-color: $whiteColor

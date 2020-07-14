@@ -47,6 +47,7 @@
                 <div class="row">
                     <div class="col-6">
                         <section class="welcome">
+                            <a href="index.html" class="welcome__back scroll">&larr; назад</a>
                             <h1 class="welcome__general scroll">Пишите мне</h1>
                             <p class="welcome__info scroll">Заполнение брифа позволяет более точно оценить стоимость проекта, провести первичное знакомство и настроиться на продуктивную работу.
                                 Пишите максимально развернуто — это поможет нам создать качественный, продающий и интересный проект. 
@@ -66,40 +67,50 @@
 
             <section class="form-section">
                 <form action="" method="post" class="form">
-                    <p class="form__title"><span>1.</span> Меня интересует</p>
+                    <p class="form__title scroll"><span>1.</span> Меня интересует</p>
 
                     <div class="checkboxes">
-                        <div class="checkbox-item">
-                            <input type="checkbox" class="checkbox" checked="false" name="interested" value="Дизайн сайта" id="site">
+                        <div class="checkbox-item scroll scroll">
+                            <input type="checkbox" class="checkbox" name="interested" value="Дизайн сайта" id="site">
                             <label for="site" data-name="Дизайн сайта"></label>
                         </div>
     
-                        <div class="checkbox-item">
-                            <input type="checkbox" class="checkbox app" checked="false" name="interested" value="Дизайн приложнения" id="app">
+                        <div class="checkbox-item scroll">
+                            <input type="checkbox" class="checkbox app" name="interested" value="Дизайн приложнения" id="app">
                             <label for="app" data-name="Дизайн приложнения"></label>
                         </div>
 
-                        <div class="checkbox-item">
-                            <input type="checkbox" class="checkbox" checked="false" name="interested" value="Брендинг" id="brend">
+                        <div class="checkbox-item scroll">
+                            <input type="checkbox" class="checkbox" name="interested" value="Брендинг" id="brend">
                             <label for="brend" data-name="Брендинг"></label>
                         </div>
 
-                        <div class="checkbox-item">
-                            <input type="checkbox" class="checkbox" checked="false" name="interested" value="Логотип" id="logo">
+                        <div class="checkbox-item scroll">
+                            <input type="checkbox" class="checkbox" name="interested" value="Логотип" id="logo">
                             <label for="logo" data-name="Логотип"></label>
                         </div>
                         
-                        <div class="checkbox-item">
-                            <input type="checkbox" class="checkbox" checked="false" name="interested" value="Сайт под ключ" id="full">
+                        <div class="checkbox-item scroll">
+                            <input type="checkbox" class="checkbox" name="interested" value="Сайт под ключ" id="full">
                             <label for="full" data-name="Сайт под ключ"></label>
                         </div>
 
-                        <div class="checkbox-item">
-                            <input type="checkbox" class="checkbox" checked="false" name="interested" value="Другое" id="other">
+                        <div class="checkbox-item scroll">
+                            <input type="checkbox" class="checkbox" name="interested" value="Другое" id="other">
                             <label for="other" data-name="Другое"></label>
                         </div>
                     </div>
 
+                    <p class="form__title scroll"><span>2.</span> Расскажите о своем проекте</p>
+                    <input type="text" class="form form__input scroll">
+                    <p class="form__title scroll"><span>3.</span> Ваше имя</p>
+                    <input type="text" class="form form__input scroll" placeholder="Напишите ваше имя">
+                    <p class="form__title scroll"><span>4.</span> Ваше email</p>
+                    <input type="text" class="form form__input scroll" placeholder="Напишите ваше email">
+                    <p class="form__title scroll"><span>5.</span> Планируемый бюджет</p>
+                    <input type="text" class="form form__input scroll" placeholder="Напишите ваш бюджет">
+
+                    <button type="submit" class="form form__submit scroll">Отправить &#8594;</button>
                 </form>
             </section>
         </main>
