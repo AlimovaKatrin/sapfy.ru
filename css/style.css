@@ -293,7 +293,17 @@ a:hover {
   font-style: normal;
   font-weight: 300;
   font-size: 2.8rem;
+  margin: 0 0 2rem 0;
   line-height: 4rem;
+}
+
+.block__list {
+  font-family: 'Ubuntu Light';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 2.8rem;
+  line-height: 4rem;
+  list-style-type: none;
 }
 
 .mini-section {
