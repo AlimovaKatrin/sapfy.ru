@@ -6,7 +6,8 @@
 
         &__title
             font-family: Ubuntu Light
-            font-size: 2.8rem           
+            font-size: 2.8rem
+            margin: 0 0 3rem 0         
 
             span
                 color: $mainColor1
@@ -58,7 +59,7 @@
                     color: $whiteColor
                     background-color: $mainColor1
                     border-radius: 10rem
-                    font-family: 'Ubuntu'     
+                    font-family: 'Ubuntu'
 
                 .checkbox:not(:checked) + label:after 
                     opacity: 0
@@ -74,9 +75,9 @@
         &__input
             width: 100%
             border: none
-            border-bottom: 1px solid $grayColor
+            border-bottom: 1px solid $lightGrayColor
             margin: 4rem 0 10rem 0
-            font-size: 3rem
+            font-size: 2.4rem
             outline: none
 
             &:active, &:focus                
@@ -84,8 +85,12 @@
                 transition: .2s
                 outline: none
 
+            &::placeholder
+                color: $grayColor
+
         &__submit
-            font-family: Ubuntu
+            font-family: 'Ubuntu'
+            position: relative
             font-style: normal
             font-weight: bold
             font-size: 2.8rem
@@ -93,3 +98,19 @@
             color: $mainColor1
             border: none
             background: none
+
+            &::after
+                content: ''
+                background-image: url('../img/arrow_r.svg')
+                display: flex
+                width: 4.4rem
+                height: 2.4rem
+                position: absolute
+                top: 0.8rem
+                left: 16.5rem
+
+            &:hover
+                color: $grayColor
+
+            &:hover::after
+                background-image: url('../img/arrow_r_hover.svg')

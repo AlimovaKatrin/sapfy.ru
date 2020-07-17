@@ -21,11 +21,28 @@
             font-size: 2.4rem
             line-height: 2.8rem
 
-        .write
+        .write            
             font-family: Ubuntu
             font-style: normal
             font-weight: bold
             font-size: 2.8rem
             line-height: 3.5rem
             color: $mainColor1
-            text-transform: lowercase 
+            text-transform: lowercase
+            margin: 0 5.5rem 0 0
+
+            &::after
+                content: ''
+                background-image: url('../img/arrow_r.svg')
+                display: flex
+                width: 4.4rem
+                height: 2.4rem
+                position: absolute
+                top: 18.9rem
+                right: 1.5rem
+
+            &:hover
+                color: $grayColor
+
+            &:hover::after
+                background-image: url('../img/arrow_r_hover.svg')

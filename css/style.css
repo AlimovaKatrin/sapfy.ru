@@ -99,7 +99,7 @@ a:hover {
 .hover {
   text-decoration: none;
   color: #333333;
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 400;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
@@ -184,13 +184,36 @@ a:hover {
 }
 
 .first-section .welcome__back {
-  font-family: Ubuntu Light;
+  position: relative;
+  font-family: 'Ubuntu Light';
   font-style: normal;
   font-weight: bold;
   font-size: 2.8rem;
   line-height: 3.5rem;
   color: #C1433C;
   text-transform: lowercase;
+  margin: 0 0 2rem 5rem;
+}
+
+.first-section .welcome__back::after {
+  content: '';
+  background-image: url("../img/arrow_l.svg");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 4.1rem;
+  height: 1.2rem;
+  position: absolute;
+  top: 1.3rem;
+  left: -4.5rem;
+}
+
+.first-section .welcome__back:hover {
+  color: #AFAFAF;
+}
+
+.first-section .welcome__back:hover::after {
+  background-image: url("../img/arrow_l_hover.svg");
 }
 
 .first-section .welcome__general {
@@ -199,14 +222,16 @@ a:hover {
   font-weight: normal;
   font-size: 12rem;
   line-height: 110%;
+  margin: 0 0 2rem 0;
 }
 
 .first-section .welcome__info {
-  font-family: Ubuntu Light;
+  font-family: 'Ubuntu Light';
   font-style: normal;
   font-weight: 300;
   font-size: 2.8rem;
   line-height: 4rem;
+  margin: 0 0 3rem 0;
 }
 
 .scene-one__birds {
@@ -278,6 +303,7 @@ a:hover {
   font-weight: 300;
   font-size: 2.4rem;
   line-height: 28px;
+  margin: 0 0 2rem 0;
 }
 
 .block__title {
@@ -285,7 +311,7 @@ a:hover {
   font-style: normal;
   font-weight: normal;
   font-size: 6.4rem;
-  line-height: 8rem;
+  line-height: 5rem;
 }
 
 .block__info {
@@ -316,7 +342,7 @@ a:hover {
 }
 
 .stack .stack-block__title {
-  font-family: Colus;
+  font-family: 'Colus';
   font-style: normal;
   font-weight: normal;
   font-size: 12rem;
@@ -324,7 +350,7 @@ a:hover {
 }
 
 .stack .stack-block__info {
-  font-family: Ubuntu Light;
+  font-family: 'Ubuntu Light';
   font-style: normal;
   font-weight: 300;
   font-size: 2.8rem;
@@ -347,7 +373,7 @@ a:hover {
 }
 
 .stack .stack-block .stack-item__title {
-  font-family: Colus;
+  font-family: 'Colus';
   font-style: normal;
   font-weight: normal;
   font-size: 6.4rem;
@@ -355,7 +381,7 @@ a:hover {
 }
 
 .block-age__item {
-  font-family: Ubuntu;
+  font-family: 'Ubuntu Light';
   font-style: normal;
   font-weight: 300;
   font-size: 2.4rem;
@@ -408,6 +434,7 @@ a:hover {
 .form-section .form__title {
   font-family: Ubuntu Light;
   font-size: 2.8rem;
+  margin: 0 0 3rem 0;
 }
 
 .form-section .form__title span {
@@ -503,9 +530,9 @@ a:hover {
 .form-section .form__input {
   width: 100%;
   border: none;
-  border-bottom: 1px solid #AFAFAF;
+  border-bottom: 1px solid #C4C4C4;
   margin: 4rem 0 10rem 0;
-  font-size: 3rem;
+  font-size: 2.4rem;
   outline: none;
 }
 
@@ -516,8 +543,25 @@ a:hover {
   outline: none;
 }
 
+.form-section .form__input::-webkit-input-placeholder {
+  color: #AFAFAF;
+}
+
+.form-section .form__input:-ms-input-placeholder {
+  color: #AFAFAF;
+}
+
+.form-section .form__input::-ms-input-placeholder {
+  color: #AFAFAF;
+}
+
+.form-section .form__input::placeholder {
+  color: #AFAFAF;
+}
+
 .form-section .form__submit {
-  font-family: Ubuntu;
+  font-family: 'Ubuntu';
+  position: relative;
   font-style: normal;
   font-weight: bold;
   font-size: 2.8rem;
@@ -525,6 +569,27 @@ a:hover {
   color: #C1433C;
   border: none;
   background: none;
+}
+
+.form-section .form__submit::after {
+  content: '';
+  background-image: url("../img/arrow_r.svg");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 4.4rem;
+  height: 2.4rem;
+  position: absolute;
+  top: 0.8rem;
+  left: 16.5rem;
+}
+
+.form-section .form__submit:hover {
+  color: #AFAFAF;
+}
+
+.form-section .form__submit:hover::after {
+  background-image: url("../img/arrow_r_hover.svg");
 }
 
 .footer {
@@ -568,5 +633,27 @@ a:hover {
   line-height: 3.5rem;
   color: #C1433C;
   text-transform: lowercase;
+  margin: 0 5.5rem 0 0;
+}
+
+.footer .down .write::after {
+  content: '';
+  background-image: url("../img/arrow_r.svg");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 4.4rem;
+  height: 2.4rem;
+  position: absolute;
+  top: 18.9rem;
+  right: 1.5rem;
+}
+
+.footer .down .write:hover {
+  color: #AFAFAF;
+}
+
+.footer .down .write:hover::after {
+  background-image: url("../img/arrow_r_hover.svg");
 }
 /*# sourceMappingURL=style.css.map */
