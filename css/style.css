@@ -100,11 +100,9 @@ a:hover {
   text-decoration: none;
   color: #333333;
   font-size: 2.4rem;
-  font-weight: 400;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   position: relative;
-  text-transform: uppercase;
 }
 
 .hover::before {
@@ -311,7 +309,6 @@ a:hover {
   font-style: normal;
   font-weight: normal;
   font-size: 6.4rem;
-  line-height: 5rem;
 }
 
 .block__info {
@@ -332,6 +329,10 @@ a:hover {
   list-style-type: none;
 }
 
+.block__list:first-child {
+  padding: 0;
+}
+
 .mini-section {
   border-bottom: 0.5px solid #C4C4C4;
   padding: 4rem 0 4rem 0;
@@ -341,7 +342,7 @@ a:hover {
   padding: 10rem 0 20rem 0;
 }
 
-.stack .stack-block__title {
+.stack .right-block__title {
   font-family: 'Colus';
   font-style: normal;
   font-weight: normal;
@@ -349,7 +350,7 @@ a:hover {
   line-height: 110%;
 }
 
-.stack .stack-block__info {
+.stack .right-block__info {
   font-family: 'Ubuntu Light';
   font-style: normal;
   font-weight: 300;
@@ -358,7 +359,7 @@ a:hover {
   margin: 0 0 6rem 0;
 }
 
-.stack .stack-block .stack-item {
+.stack .right-block .right-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -372,7 +373,7 @@ a:hover {
   padding: 0;
 }
 
-.stack .stack-block .stack-item__title {
+.stack .right-block .right-item__title {
   font-family: 'Colus';
   font-style: normal;
   font-weight: normal;
@@ -387,6 +388,66 @@ a:hover {
   font-size: 2.4rem;
   line-height: 2.8rem;
   color: #AFAFAF;
+}
+
+.process {
+  padding: 10rem 0 20rem 0;
+}
+
+.process .right-block__title {
+  font-family: 'Colus';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12rem;
+  line-height: 110%;
+  margin: 0 0 2rem 0;
+}
+
+.process .right-block__info {
+  font-family: 'Ubuntu Light';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 2.8rem;
+  line-height: 4rem;
+  margin: 0 0 2rem 0;
+}
+
+.process .right-block .right-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 0 3rem 0;
+  padding: 0;
+}
+
+.process .right-block .right-item__title {
+  font-family: 'Colus';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 6.4rem;
+  line-height: 8rem;
+}
+
+.process__subtitle {
+  font-family: 'Colus';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 6.4rem;
+  line-height: 8rem;
+}
+
+.process__description {
+  font-family: 'Ubuntu Light';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 2.8rem;
+  line-height: 4rem;
 }
 
 .scene-two__bg {
@@ -405,6 +466,8 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .block-tags__item {
