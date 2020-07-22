@@ -3,12 +3,12 @@ let windowWidth = window.innerWidth || document.documentElement.clientWidth || d
 setHtmlSize();
 
 function setHtmlSize() {
-    if (windowWidth < 1400 && windowWidth >= 576) {
+    if (windowWidth < 1400 && windowWidth >= 320) {
         document.getElementsByTagName('html')[0].style.fontSize = (windowWidth / 1400) * 10 + "px";
     } else if (windowWidth >= 1400) {
         document.getElementsByTagName('html')[0].style.fontSize = "10px";
-    } else if (windowWidth < 576) {
-        document.getElementsByTagName('html')[0].style.fontSize = (windowWidth / 576) * 10 + "px";
+    } else if (windowWidth < 320) {
+        document.getElementsByTagName('html')[0].style.fontSize = (windowWidth / 320) * 10 + "px";
     };
 };
 window.addEventListener('resize', function () {
@@ -24,10 +24,17 @@ window.addEventListener("orientationchange", function () {
 
 // "Note" button operation
 let note = document.querySelector('.menu__note'),
-    sun = document.querySelector('.sun');
+    sun = document.querySelector('.sun'),
+    file = document.getElementsByTagName('audio')[0];
 
 note.addEventListener('click', function () {
     note.classList.toggle('menu__note_action');
+
+    if (note.classList.contains('menu__note_action')) {
+        file.play();
+    } else {
+        file.pause();
+    }    
 
     if(sun != undefined) {
         sun.classList.toggle('action');

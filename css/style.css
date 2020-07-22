@@ -48,9 +48,9 @@ body {
 }
 
 body::-webkit-scrollbar {
-  width: 10px;
+  width: 1rem;
   background-color: #fff;
-  border-radius: 5px;
+  border-radius: 0.5rem;
 }
 
 body::-webkit-scrollbar-track {
@@ -59,7 +59,7 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
   background-color: #afafaf;
-  border-radius: 10px;
+  border-radius: 1rem;
 }
 
 a:hover {
@@ -67,9 +67,21 @@ a:hover {
   color: #333333;
 }
 
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+  padding: 0;
+}
+
+.pl {
+  padding: 0 0 0 17.5rem;
+}
+
+.pr {
+  padding: 0 17.5rem 0 0;
+}
+
 .wrap {
   background-color: white;
-  width: calc(100% - 20rem);
+  width: calc(100% - 22rem);
   margin: 0 auto;
   height: 100vh;
 }
@@ -185,7 +197,6 @@ a:hover {
   position: relative;
   font-family: 'Ubuntu Light';
   font-style: normal;
-  font-weight: bold;
   font-size: 2.8rem;
   line-height: 3.5rem;
   color: #C1433C;
@@ -285,14 +296,20 @@ a:hover {
   height: 116rem;
 }
 
-.section .image {
-  height: 90rem;
+.image {
+  height: 84.5rem;
 }
 
-.section .image .image__item {
+.image .image__item {
   background-image: url("../img/image.png");
   width: 100%;
   height: 100%;
+}
+
+.image .image__item_full {
+  margin: 6rem 0;
+  width: 100%;
+  height: 96rem;
 }
 
 .block__date {
@@ -400,7 +417,6 @@ a:hover {
   font-weight: normal;
   font-size: 12rem;
   line-height: 110%;
-  margin: 0 0 2rem 0;
 }
 
 .process .right-block__info {
@@ -434,12 +450,18 @@ a:hover {
   line-height: 8rem;
 }
 
+.process__image_item {
+  margin: 6rem 0;
+  width: 100%;
+  height: 96rem;
+}
+
 .process__subtitle {
   font-family: 'Colus';
   font-style: normal;
   font-weight: normal;
   font-size: 6.4rem;
-  line-height: 8rem;
+  margin: 10rem 0 6rem 0;
 }
 
 .process__description {
@@ -626,12 +648,12 @@ a:hover {
   font-family: 'Ubuntu';
   position: relative;
   font-style: normal;
-  font-weight: bold;
   font-size: 2.8rem;
   line-height: 3.5rem;
   color: #C1433C;
   border: none;
   background: none;
+  padding: 0;
 }
 
 .form-section .form__submit::after {
@@ -653,6 +675,26 @@ a:hover {
 
 .form-section .form__submit:hover::after {
   background-image: url("../img/arrow_r_hover.svg");
+}
+
+.future {
+  padding: 0 0 20rem 0;
+}
+
+.future__title {
+  font-family: 'Colus';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12.8rem;
+  margin: 0 0 2rem 0;
+}
+
+.future__description {
+  font-family: 'Ubuntu Light';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 2.8rem;
+  line-height: 4rem;
 }
 
 .footer {
@@ -691,12 +733,11 @@ a:hover {
 .footer .down .write {
   font-family: Ubuntu;
   font-style: normal;
-  font-weight: bold;
   font-size: 2.8rem;
   line-height: 3.5rem;
   color: #C1433C;
   text-transform: lowercase;
-  margin: 0 5.5rem 0 0;
+  margin: 0 8rem 0 0;
 }
 
 .footer .down .write::after {
