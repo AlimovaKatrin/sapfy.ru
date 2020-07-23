@@ -1,3 +1,20 @@
 .mini-section
     border-bottom: 0.5px solid $lightGrayColor
     padding: 4rem 0 4rem 0
+
+    .items
+        display: flex
+        align-items: center
+        justify-content: space-between
+
+// Medium devices (tablets, 768px and down)
+@media (max-width: 768px)
+    .mini-section
+        border-bottom: 0.5px solid $lightGrayColor
+        padding: 4rem 0 4rem 0
+
+        .items
+            display: flex
+            align-items: start
+            justify-content: space-between
+            flex-direction: column
