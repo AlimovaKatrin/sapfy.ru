@@ -13,7 +13,10 @@
             line-height: 2.8rem
 
     .down
+        display: flex
         margin: 18rem 0 0 0
+        justify-content: space-between
+        align-items: center
 
         .year
             font-style: normal
@@ -45,3 +48,55 @@
 
             &:hover::after
                 background-image: url('../img/arrow_r_hover.svg')
+
+// Medium devices (tablets, 768px and down)
+@media (max-width: 769px)
+
+    .footer
+        height: 42.5rem
+        padding: 10rem 0 5rem 0
+
+        .copyright
+            display: flex
+            flex-direction: column
+            margin: 0 0 8rem 0
+
+            &__item
+                font-style: normal
+                font-weight: 300
+                font-size: 2rem
+                line-height: 2.8rem
+
+        .down
+            margin: 18rem 0 0 0
+
+            .year
+                font-style: normal
+                font-weight: 300
+                font-size: 2rem
+                line-height: 2.8rem
+
+            .write            
+                font-family: Ubuntu
+                font-style: normal
+                font-size: 2.8rem
+                line-height: 3.5rem
+                color: $mainColor1
+                text-transform: lowercase
+                margin: 0 8rem 0 0
+
+                &::after
+                    content: ''
+                    background-image: url('../img/arrow_r.svg')
+                    display: flex
+                    width: 4.4rem
+                    height: 2.4rem
+                    position: absolute
+                    top: 18.9rem
+                    right: 1.5rem
+
+                &:hover
+                    color: $grayColor
+
+                &:hover::after
+                    background-image: url('../img/arrow_r_hover.svg')

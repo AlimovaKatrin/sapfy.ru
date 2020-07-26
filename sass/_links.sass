@@ -1,4 +1,8 @@
 .links
+    display: flex
+
+    &:nth-child(1)
+        justify-content: flex-end
 
     &__social
         color: $mainColor1
@@ -13,4 +17,28 @@
             color: $grayColor
 
         &:last-child
-            margin-right: 0 
+            margin-right: 0
+
+// Medium devices (tablets, 768px and down)
+@media (max-width: 769px)
+
+    .links        
+        flex-wrap: wrap
+
+        &:nth-child(1)
+            justify-content: flex-start
+
+        &__social
+            color: $mainColor1
+            font-family: 'Ubuntu Light'
+            font-style: normal
+            font-weight: 300
+            font-size: 2rem
+            line-height: 2.8rem
+            margin: 0 4rem 2rem 0
+
+            &:hover
+                color: $grayColor
+
+            &:last-child
+                margin-right: 0

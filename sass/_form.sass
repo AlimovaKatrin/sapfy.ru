@@ -114,3 +114,122 @@
 
             &:hover::after
                 background-image: url('../img/arrow_r_hover.svg')
+
+// Medium devices (tablets, 768px and down)
+@media (max-width: 769px)
+    .form-section
+        display: flex
+        flex-direction: row
+
+        .form
+
+            &__title
+                font-family: Ubuntu Light
+                font-size: 2.5rem
+                margin: 0 0 3rem 0         
+
+                span
+                    color: $mainColor1
+
+            .checkboxes
+                display: flex
+                flex-wrap: wrap
+            
+                .checkbox-item
+                    width: 30rem
+                    height: 8rem
+                    margin: 0 auto 4rem
+                    
+                    .checkbox:not(:checked),
+                    .checkbox:checked 
+                        position: absolute
+                        left: -9999px
+
+                    .checkbox:not(:checked) + label,
+                    .checkbox:checked + label 
+                        position: relative
+                        cursor: pointer
+
+                    .checkbox:not(:checked) + label:before,
+                    .checkbox:checked + label:before 
+                        content: attr(data-name)
+                        position: absolute
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        font-size: 2rem
+                        width: 30rem
+                        height: 8rem
+                        border: 0.5px solid #ccc
+                        background: $whiteColor
+                        border-radius: 10rem
+                        font-family: 'Ubuntu'                
+
+                    .checkbox:not(:checked) + label:after,
+                    .checkbox:checked + label:after 
+                        content: attr(data-name)
+                        position: absolute
+                        width: 30rem
+                        height: 8rem
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        font-size: 2rem
+                        color: $whiteColor
+                        background-color: $mainColor1
+                        border-radius: 10rem
+                        font-family: 'Ubuntu'
+
+                    .checkbox:not(:checked) + label:after 
+                        opacity: 0
+                        transform: scale(0)
+
+                    .checkbox:checked + label:after 
+                        opacity: 1
+                        transform: scale(1)                
+
+                    label:hover:before 
+                        border: 0.5px solid $mainColor1!important
+
+        &__input
+            width: 100%
+            border: none
+            border-bottom: 1px solid $lightGrayColor
+            margin: 4rem 0 10rem 0
+            font-size: 2.4rem
+            outline: none
+
+            &:active, &:focus                
+                border-bottom: 2px solid $mainColor1
+                transition: .2s
+                outline: none
+
+            &::placeholder
+                color: $grayColor
+
+        &__submit
+            font-family: 'Ubuntu'
+            position: relative
+            font-style: normal
+            font-size: 2.8rem
+            line-height: 3.5rem
+            color: $mainColor1
+            border: none
+            background: none
+            padding: 0
+
+            &::after
+                content: ''
+                background-image: url('../img/arrow_r.svg')
+                display: flex
+                width: 4.4rem
+                height: 2.4rem
+                position: absolute
+                top: 0.8rem
+                left: 16.5rem
+
+            &:hover
+                color: $grayColor
+
+            &:hover::after
+                background-image: url('../img/arrow_r_hover.svg')
