@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/vivify.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/animate.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Sapfy — UX/UI дизайнер</title>
     <link rel="icon" type="image/png" href="favicon.png">
@@ -13,6 +13,11 @@
 
 <body>
     <div class="wrap">
+
+        <div class="preloader welcome__general">
+            <div class="preloader_inner">— 2020 </div>
+        </div>
+
         <header class="header">
             <nav class="menu">
                 <a class="menu__link" href="#">
@@ -50,9 +55,8 @@
                     <div class="col-md-12 col-lg-6">
                         <section class="welcome">
                             <h1 class="welcome__general scroll">UX/UI дизайнер</h1>
-                            <p class="welcome__info scroll">Привет, я Света — UX/UI дизайнер из Санкт-Петербурга. Для
-                                меня
-                                важно это и это, а еще я делаю это и это.</p>
+                            <p class="welcome__info scroll">Привет, я Света — UX/UI дизайнер из Санкт-Петербурга.
+                            </p>
                         </section>
 
                         <section class="links scroll">
@@ -60,57 +64,70 @@
                             <a href="https://www.instagram.com/sapfy/" target="_blank"
                                 class="links__social">instagram</a>
                             <a href="https://vk.me/vis.sapfy" target="_blank" class="links__social">vk</a>
-                            <a href="https://www.behance.net/vissapfy32b5" target="_blank"
-                                class="links__social">behance</a>
+                            <a href="https://www.behance.net/sapfy" target="_blank" class="links__social">behance</a>
                             <a href="https://codepen.io/Sapfy" target="_blank" class="links__social">codepen</a>
                         </section>
                     </div>
 
                     <div class="col-lg-6 d-none d-lg-block">
-                        <div id="scene-one" class="scene scene-one">
-                            <div data-depth-x="-0.90" data-depth-y="-1.0">
-                                <img class="scene-one__birds" src="./img/birds.png">
+                        <div id="scene-one" class="scene scene-one scroll">
+
+
+                            <div data-depth="0.00">
+                                <img src="./img/bg_1.png">
                             </div>
 
-                            <div data-depth-x="-0.40" data-depth-y="-1.0">
-                                <img class="sun scene-one__sun" src="./img/sun.png">
+                            <div data-depth="0.01">
+                                <img src="./img/bg_2.png">
                             </div>
 
-                            <div data-depth="0.60" data-depth-y="-0.30" data-depth-x="-0.30">
-                                <img class="scene-one__bg-one" src="./img/bg_3.png">
+                            <div data-depth="0.02">
+                                <img src="./img/bg_3.png">
                             </div>
 
-                            <div data-depth="0.40" data-depth-y="-0.30" data-depth-x="1">
-                                <img class="scene-one__bg-two" src="./img/bg_2.png">
+                            <div data-depth="0.04">
+                                <img src="./img/bg_4.png">
                             </div>
 
-                            <div data-depth="0.80" data-depth-y="-0.30" data-depth-x="-0.50">
-                                <img class="scene-one__bg-three" src="./img/bg_1.png">
+                            <div data-depth="0.00">
+                                <img src="./img/bg_5.png">
                             </div>
+
+                            <div data-depth="0.07">
+                                <img src="./img/bg_6.png">
+                            </div>
+
+                            <div data-depth="0.15">
+                                <img src="./img/bg_7.png">
+                            </div>
+
                         </div>
                     </div>
-                </div>
             </section>
 
             <section class="section">
                 <div class="row">
-                    <div class="col-md-12 col-lg-5 offset-lg-7 block">
-                        <p class="block__date scroll">02/2018</p>
-                        <a class="block__link" href="#">
-                            <h2 class="block__title scroll hover" data-item='Кондиционер-спб'>Кондиционер-спб</h2>
-                        </a>                        
+                    <div class="col-md-12 col-lg-6 offset-lg-7 block indents_bottom">
+                        <p class="block__date scroll">09/2019</p>
+                        <a class="block__link" href="product_1.html">
+                            <h2 class="block__title scroll hover">
+                                <span data-content="Кондиционер-СПБ" aria-hidden="true">
+                                </span>Кондиционер-СПБ</h2>
+                        </a>
                     </div>
 
                     <div class="col-md-12 col-lg-6 image">
-                        <div class="image__item"></div>
+                        <div>
+                            <img class="image__item" src="./img/picture/image_1.png">
+                        </div>
                     </div>
 
                     <div class="col-md-12 col-lg-5 offset-lg-1">
                         <section class="block">
-                            <p class="block__info scroll">Создали мобильный интерфейс для болельщиков «Зенита», где они
-                                узнают
-                                о новостях клуба, следят за матчами в онлайне, делятся впечатлениями и эмоциями.
-                                мобильное приложение</p>
+                            <p class="block__info scroll">Разработка дизайна сайта для Санкт-Петербургской компании,
+                                предоставляющей решения по вентиляции и кондиционированию. Работа компании
+                                специализируется на проектировании систем для коммерческих и промышленных зданий,
+                                медицинских учреждений, морских и речных судов.</p>
 
                             <section class="block-tags">
                                 <p class="block-tags__item scroll">сайт</a>
@@ -124,20 +141,23 @@
             <section class="section">
                 <div class="row">
 
-                    <div class="col-md-12 col-lg-12 block">
-                        <p class="block__date scroll">02/2018</p>
-                        <a class="block__link" href="#">
-                            <h2 class="block__title scroll hover" data-item='Smart food'>Smart food</h2>
+                    <div class="col-md-12 col-lg-12 block indents_bottom">
+                        <p class="block__date scroll">03/2019</p>
+                        <a class="block__link" href="product_2.html">
+                            <h2 class="block__title scroll hover">
+                                <span data-content="Smart Food" aria-hidden="true">
+                                </span>Smart Food</h2>
                         </a>
                     </div>
 
                     <div class="col-md-12 col-lg-5">
                         <section class="block">
 
-                            <p class="block__info scroll">Создали мобильный интерфейс для болельщиков «Зенита», где они
-                                узнают
-                                о новостях клуба, следят за матчами в онлайне, делятся впечатлениями и эмоциями.
-                                мобильное приложение</p>
+                            <p class="block__info scroll">Разработка этикетки для отечественного бренда, выпускающего
+                                продукцию для здоровья и правильного питания. Продукция Smart Food подходит как для
+                                спортсменов любого уровня и профиля, так и для людей, поддерживающих здоровый образ
+                                жизни.
+                            </p>
 
                             <section class="block-tags">
                                 <p class="block-tags__item scroll">брендинг</p>
@@ -147,7 +167,9 @@
                     </div>
 
                     <div class="col-md-12 col-lg-6 offset-lg-1 image">
-                        <div class="image__item"></div>
+                        <div>
+                            <img class="image__item" src="./img/picture/image_2.png">
+                        </div>
                     </div>
 
                 </div>
@@ -156,13 +178,15 @@
             <section class="mini-section">
                 <div class="row">
                     <div class="col-md-12 col-lg-12 items block">
-                        <a class="block__link" href="#">
-                            <h2 class="block__title hover" data-item='RedWoodHeart'>RedWoodHeart</h2>
+                        <a class="block__link" href="product_3.html">
+                            <h2 class="block__title scroll hover">
+                                <span data-content="RedWoodHeart" aria-hidden="true">
+                                </span>RedWoodHeart</h2>
                         </a>
 
                         <section class="block-tags">
-                            <p class="block-tags__item">брендинг</p>
-                            <p class="block-tags__item">разработка логотипа</p>
+                            <p class="block-tags__item scroll">брендинг</p>
+                            <p class="block-tags__item scroll">разработка логотипа</p>
                         </section>
                     </div>
                 </div>
@@ -172,13 +196,15 @@
             <section class="mini-section">
                 <div class="row">
                     <div class="col-md-12 col-lg-12 items block">
-                        <a class="block__link" href="#">
-                            <h2 class="block__title hover" data-item='Школа иностранного языка'>Школа иностранного языка</h2>
+                        <a class="block__link" href="product_4.html">
+                            <h2 class="block__title scroll hover">
+                                <span data-content="Школа Иностранного Языка" aria-hidden="true">
+                                </span>Школа Иностранного Языка</h2>
                         </a>
 
                         <section class="block-tags">
-                            <p class="block-tags__item">сайт</p>
-                            <p class="block-tags__item">разработка дизайна сайта</p>
+                            <p class="block-tags__item scroll">сайт</p>
+                            <p class="block-tags__item scroll">разработка дизайна сайта</p>
                         </section>
                     </div>
                 </div>
@@ -187,13 +213,15 @@
             <section class="mini-section">
                 <div class="row">
                     <div class="col-md-12 col-lg-12 items block">
-                        <a class="block__link" href="#">
-                            <h2 class="block__title hover" data-item='FIT HEALTH'>FIT HEALTH</h2>
+                        <a class="block__link" href="product_5.html">
+                            <h2 class="block__title scroll hover">
+                                <span data-content="Fit Health" aria-hidden="true">
+                                </span>Fit Health</h2>
                         </a>
 
                         <section class="block-tags">
-                            <p class="block-tags__item">сайт, брединг</p>
-                            <p class="block-tags__item">разработка дизайна сайта</p>
+                            <p class="block-tags__item scroll">сайт, брендинг</p>
+                            <p class="block-tags__item scroll">редизайн сайта, брендинг</p>
                         </section>
                     </div>
                 </div>
@@ -202,13 +230,15 @@
             <section class="mini-section">
                 <div class="row">
                     <div class="col-md-12 col-lg-12 items block">
-                        <a class="block__link" href="#">
-                            <h2 class="block__title hover" data-item='Email-рассылки'>Email-рассылки</h2>
+                        <a class="block__link" href="product_6.html">
+                            <h2 class="block__title scroll hover">
+                                <span data-content="Стройград" aria-hidden="true">
+                                </span>Стройград</h2>
                         </a>
 
                         <section class="block-tags">
-                            <p class="block-tags__item">брендинг</p>
-                            <p class="block-tags__item">разработка шаблона рассылок</p>
+                            <p class="block-tags__item scroll">сайт, брендинг</p>
+                            <p class="block-tags__item scroll">редизайн сайта, брендинг</p>
                         </section>
                     </div>
                 </div>
@@ -217,28 +247,32 @@
             <section class="mini-section">
                 <div class="row">
                     <div class="col-md-12 col-lg-12 items block">
-                        <a class="block__link" href="#">
-                            <h2 class="block__title hover" data-item='Работа_7'>Работа_7</h2>
+                        <a class="block__link" href="product_7.html">
+                            <h2 class="block__title scroll hover">
+                                <span data-content="Meradog" aria-hidden="true">
+                                </span>Meradog</h2>
                         </a>
 
                         <section class="block-tags">
-                            <p class="block-tags__item">брендинг</p>
-                            <p class="block-tags__item">разработка логотипа</p>
+                            <p class="block-tags__item scroll">сайт</p>
+                            <p class="block-tags__item scroll">разработка дизайна сайта</p>
                         </section>
                     </div>
                 </div>
             </section>
 
-            <section class="mini-section">
+            <section class="mini-section-bottom">
                 <div class="row">
                     <div class="col-md-12 col-lg-12 items block">
-                        <a class="block__link" href="#">
-                            <h2 class="block__title hover" data-item='Работа_8'>Работа_8</h2>
-                        </a>    
+                        <a class="block__link" href="product_8.html">
+                            <h2 class="block__title scroll hover">
+                                <span data-content="Badee" aria-hidden="true">
+                                </span>Badee</h2>
+                        </a>
 
                         <section class="block-tags">
-                            <p class="block-tags__item">брендинг</p>
-                            <p class="block-tags__item">разработка логотипа</p>
+                            <p class="block-tags__item scroll">сайт</p>
+                            <p class="block-tags__item scroll">разработка дизайна сайта</p>
                         </section>
                     </div>
                 </div>
@@ -248,26 +282,40 @@
                 <div class="row">
 
                     <div class="col-lg-6 d-none d-lg-block">
-                        <div id="scene-two" class="scene scene-two">
-                            <div data-depth-x="-0.60" data-depth-y="-1.50">
-                                <img class="scene-two__bg" src="./img/bg_4.png">
+                        <div id="scene-two" class="scene scene-two scroll">
+
+                            <div data-depth="0.00">
+                                <img src="./img/bg(2)_1.png">
                             </div>
-                            <div data-depth="0.80" data-depth-y="1.80">
-                                <img class="scene-two__ship" src="./img/ship.png">
+
+                            <div data-depth="0.01">
+                                <img src="./img/bg(2)_2.png">
+                            </div>
+
+                            <div data-depth="0.02">
+                                <img src="./img/bg(2)_3.png">
+                            </div>
+
+                            <div data-depth="0.04">
+                                <img src="./img/bg(2)_4.png">
+                            </div>
+
+                            <div data-depth="0.15">
+                                <img src="./img/bg(2)_5.png">
                             </div>
                         </div>
                     </div>
 
                     <div class="col-md-12 col-lg-6 right-block">
                         <h2 class="right-block__title scroll">Stack</h2>
-                        <p class="right-block__info scroll">Привет, я Света — UX/UI дизайнер из Санкт-Петербурга. Для меня
-                            важно это и это, а еще я делаю это и это.</p>
+                        <p class="right-block__info scroll indents_bottom">Основные инструменты, с которыми я работаю.
+                        </p>
 
                         <div class="col-12 right-item">
                             <h2 class="right-item__title scroll">Figma</h2>
 
                             <section class="block-age">
-                                <p class="block-age__item scroll">2 года</p>
+                                <p class="block-age__item scroll">> 3 года</p>
                             </section>
                         </div>
 
@@ -275,7 +323,7 @@
                             <h2 class="right-item__title scroll">Adobe PS/AI/PR/AU</h2>
 
                             <section class="block-age">
-                                <p class="block-age__item scroll">2 года</p>
+                                <p class="block-age__item scroll">> 10 лет</p>
                             </section>
                         </div>
 
@@ -283,7 +331,7 @@
                             <h2 class="right-item__title scroll">HTML/CSS</h2>
 
                             <section class="block-age">
-                                <p class="block-age__item scroll">2 года</p>
+                                <p class="block-age__item scroll">> 4 года</p>
                             </section>
                         </div>
 
@@ -291,7 +339,8 @@
                             <h2 class="right-item__title scroll">JS</h2>
 
                             <section class="block-age">
-                                <p class="block-age__item scroll">2 года</p>
+                                <p class="block-age__item scroll">
+                                    < 1 год</p>
                             </section>
                         </div>
                     </div>
@@ -316,7 +365,7 @@
                         <a href="https://t.me/Sapfy" target="_blank" class="links__social">telegram</a>
                         <a href="https://www.instagram.com/sapfy/" target="_blank" class="links__social">instagram</a>
                         <a href="https://vk.me/vis.sapfy" target="_blank" class="links__social">vk</a>
-                        <a href="https://www.behance.net/vissapfy32b5" target="_blank" class="links__social">behance</a>
+                        <a href="https://www.behance.net/sapfy" target="_blank" class="links__social">behance</a>
                         <a href="https://codepen.io/Sapfy" target="_blank" class="links__social">codepen</a>
                     </section>
                 </div>
@@ -332,8 +381,11 @@
         </footer>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-    <script src="js/script.js"></script>
+    <!-- Scripts -->
+    <script defer src="js/parallax.min.js"></script>
+    <script defer src="js/smoothScroll.min.js"></script>
+    <script defer src="js/simpleParallax.min.js"></script>
+    <script defer src="js/script.js"></script>
 </body>
 
 </html>

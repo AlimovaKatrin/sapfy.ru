@@ -24,7 +24,6 @@
 
 // "Note" button operation
 let note = document.querySelector('.menu__note'),
-    sun = document.querySelector('.sun'),
     file = document.getElementsByTagName('audio')[0];
 
 note.addEventListener('click', function () {
@@ -34,23 +33,18 @@ note.addEventListener('click', function () {
         file.play();
     } else {
         file.pause();
-    }    
-
-    if(sun != undefined) {
-        sun.classList.toggle('action');
     }
-    
 })
 
 // Parallax
 let sceneOne = document.getElementById('scene-one'),
     sceneTwo = document.getElementById('scene-two');
-    // parallaxOne = new Parallax(sceneOne, {        
-    //     relativeInput: true}), 
-    if(sceneOne != undefined || sceneTwo != undefined) {
-        parallaxOne = new Parallax(sceneOne),
+// parallaxOne = new Parallax(sceneOne, {        
+//     relativeInput: true}), 
+if (sceneOne != undefined || sceneTwo != undefined) {
+    parallaxOne = new Parallax(sceneOne),
         parallaxTwo = new Parallax(sceneTwo);
-    }
+}
 
 
 // Scroll
@@ -77,9 +71,8 @@ function scrolling(e) {
         let scrollItem = scrollItems[i];
 
         if (isPartiallyVisible(scrollItem)) {
-            scrollItem.classList.add("vivify");
-            scrollItem.classList.add("pullUp");
-            scrollItem.classList.add("delay-300");
+            scrollItem.classList.add("animate__animated");
+            scrollItem.classList.add("animate__fadeIn");
         }
     }
 }
@@ -100,3 +93,60 @@ function isFullyVisible(el) {
 
     return ((top >= 0) && (bottom <= window.innerHeight));
 }
+
+// preloader
+const loader = (_success) => {
+    let obj = document.querySelector('.preloader'),
+        inner = document.querySelector('.preloader_inner'),
+        page = document.querySelector('body');
+
+    obj.classList.add('show');
+    page.classList.remove('show');
+
+    let w = 1995,
+        t = setInterval(() => {
+            w = w + 1;
+            inner.textContent = '— ' + w;
+            if (w === 2021) {
+                obj.classList.remove('show');
+                page.classList.add('show');
+                clearInterval(t);
+                w = 0;
+                if (_success) {
+                    return _success();
+                }
+            }
+        }, 120);
+}
+// session preloader
+if (sessionStorage.getItem('showPreloader') == null) {
+    sessionStorage.setItem('showPreloader', 'true');
+    loader();
+}
+
+// simpleParallax
+let image = document.getElementsByClassName('image__item');
+new simpleParallax(image, {
+    delay: .3,
+    transition: 'cubic-bezier(0,0,0,0.2)'
+});
+
+// SmoothScroll
+SmoothScroll({
+    animationTime: 900,
+    stepSize: 60,
+
+    // Acceleration
+    accelerationDelta: 50,  // 50
+    accelerationMax: 3,   // 3
+
+    // Keyboard Settings
+    keyboardSupport: true,  // option
+    arrowScroll: 50,    // [px]
+
+    // Pulse (less tweakable)
+    // ratio of "tail" to "acceleration"
+    pulseAlgorithm: true,
+    pulseScale: 3,
+    pulseNormalize: 1,
+})
