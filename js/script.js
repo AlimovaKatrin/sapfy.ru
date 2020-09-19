@@ -23,16 +23,96 @@
 // });
 
 // "Note" button operation
-let note = document.querySelector('.menu__note'),
-    file = document.getElementsByTagName('audio')[0];
+const note = document.querySelector('.menu__note');
+const file = document.getElementsByTagName('audio')[0];
+const logo = document.getElementsByClassName('menu__link')[0];
+const backBtn = document.getElementsByClassName('welcome__back')[0];
+const writeBtn = document.getElementsByClassName('write')[0];
+const submitBtn = document.getElementsByClassName('form__submit')[0];
+const links = document.getElementsByClassName('links__social');
+const spans = document.getElementsByClassName('span__hover');
+const numbers = document.getElementsByClassName('number__hover');
+const inputs = document.getElementsByClassName('form__input');
 
 note.addEventListener('click', function () {
     note.classList.toggle('menu__note_action');
 
     if (note.classList.contains('menu__note_action')) {
         file.play();
+
+        if (logo != undefined) {
+            logo.style.color = '#438A5E';
+        }
+
+        if (backBtn != undefined) {
+            backBtn.classList.add('welcome__back-cc');
+        }
+
+        if (writeBtn != undefined) {
+            writeBtn.classList.add('write-cc');
+        }
+
+        if (submitBtn != undefined) {
+            submitBtn.classList.add('submit-cc')
+        }
+
+        // links
+        for (let index = 0; index < links.length; index++) {
+            links[index].style.color = '#438A5E';
+        }
+
+        // spans
+        for (let index = 0; index < spans.length; index++) {
+            spans[index].classList.add('hover-cc');
+        }
+
+        // numbers
+        for (let index = 0; index < numbers.length; index++) {
+            numbers[index].classList.add('number__hover-cc');
+        }
+
+        // inputs
+        if (inputs != undefined) {
+            for (let index = 0; index < inputs.length; index++) {
+                inputs[index].classList.add('input-cc');
+            }
+        }
     } else {
         file.pause();
+
+        if (logo != undefined) {
+            logo.style.color = '#C1433C';
+        }
+
+        if (backBtn != undefined) {
+            backBtn.classList.remove('welcome__back-cc');
+        }
+
+        if (writeBtn != undefined) {
+            writeBtn.classList.remove('write-cc');
+        }
+
+        if (submitBtn != undefined) {
+            submitBtn.classList.remove('submit-cc')
+        }
+
+        for (let index = 0; index < links.length; index++) {
+            links[index].style.color = '#C1433C';
+        }
+
+        for (let index = 0; index < spans.length; index++) {
+            spans[index].classList.remove('hover-cc');
+        }
+
+        for (let index = 0; index < numbers.length; index++) {
+            numbers[index].classList.remove('number__hover-cc');
+        }
+
+        if (inputs != undefined) {
+            for (let index = 0; index < inputs.length; index++) {
+                inputs[index].classList.remove('input-cc');
+            }
+        }
     }
 })
 
@@ -94,7 +174,7 @@ function isFullyVisible(el) {
     return ((top >= 0) && (bottom <= window.innerHeight));
 }
 
-// preloader
+// Preloader
 const loader = (_success) => {
     let obj = document.querySelector('.preloader'),
         inner = document.querySelector('.preloader_inner'),
@@ -118,20 +198,21 @@ const loader = (_success) => {
             }
         }, 120);
 }
-// session preloader
+// Session preloader
 if (sessionStorage.getItem('showPreloader') == null) {
     sessionStorage.setItem('showPreloader', 'true');
     loader();
 }
 
-// simpleParallax
+// Simple Parallax
 let image = document.getElementsByClassName('image__item');
 new simpleParallax(image, {
     delay: .3,
     transition: 'cubic-bezier(0,0,0,0.2)'
 });
 
-// SmoothScroll
+
+// Smooth Scroll
 SmoothScroll({
     animationTime: 900,
     stepSize: 60,

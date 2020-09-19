@@ -152,7 +152,7 @@ a:hover {
   overflow: hidden;
 }
 
-.hover span {
+.hover .span__hover {
   position: absolute;
   top: 0;
   left: 0;
@@ -165,7 +165,7 @@ a:hover {
   transition: transform 1.4s ease, -webkit-transform 1.4s ease;
 }
 
-.hover span::before {
+.hover .span__hover::before {
   display: inline-block;
   content: attr(data-content);
   color: #C1433C;
@@ -177,12 +177,47 @@ a:hover {
   transition: transform 1.4s ease, -webkit-transform 1.4s ease;
 }
 
-.hover:hover span {
+.hover:hover .span__hover {
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
 
-.hover:hover span::before {
+.hover:hover .span__hover::before {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.hover .hover-cc {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 1.4s ease;
+  transition: -webkit-transform 1.4s ease;
+  transition: transform 1.4s ease;
+  transition: transform 1.4s ease, -webkit-transform 1.4s ease;
+}
+
+.hover .hover-cc::before {
+  display: inline-block;
+  content: attr(data-content);
+  color: #438A5E;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 1.4s ease;
+  transition: -webkit-transform 1.4s ease;
+  transition: transform 1.4s ease;
+  transition: transform 1.4s ease, -webkit-transform 1.4s ease;
+}
+
+.hover:hover .hover-cc {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.hover:hover .hover-cc::before {
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
@@ -200,6 +235,12 @@ a:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.menu .menu__link {
+  font-size: 2.4rem;
+  font-family: 'Ubuntu Light', sans-serif;
+  color: #C1433C;
 }
 
 .menu .menu__music {
@@ -283,6 +324,38 @@ a:hover {
 }
 
 .first-section .welcome__back:hover::after {
+  background-image: url("../img/arrow_l_hover.svg");
+}
+
+.first-section .welcome__back-cc {
+  position: relative;
+  font-family: 'Ubuntu Light';
+  font-style: normal;
+  font-size: 2.8rem;
+  line-height: 3.5rem;
+  color: #438A5E;
+  text-transform: lowercase;
+  margin: 0 0 2rem 5rem;
+}
+
+.first-section .welcome__back-cc::after {
+  content: '';
+  background-image: url("../img/arrow_l_g.svg");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 4.1rem;
+  height: 1.2rem;
+  position: absolute;
+  top: 1.3rem;
+  left: -4.5rem;
+}
+
+.first-section .welcome__back-cc:hover {
+  color: #AFAFAF;
+}
+
+.first-section .welcome__back-cc:hover::after {
   background-image: url("../img/arrow_l_hover.svg");
 }
 
@@ -809,8 +882,12 @@ a:hover {
   margin: 0 0 3rem 0;
 }
 
-.form-section .form__title span {
+.form-section .form__title .number__hover {
   color: #C1433C;
+}
+
+.form-section .form__title .number__hover-cc {
+  color: #438A5E;
 }
 
 .form-section .form .checkboxes {
@@ -962,6 +1039,72 @@ a:hover {
 }
 
 .form-section .form__submit:hover::after {
+  background-image: url("../img/arrow_r_hover.svg");
+}
+
+.form-section .form .input-cc {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #C4C4C4;
+  margin: 4rem 0 10rem 0;
+  font-size: 2.4rem;
+  outline: none;
+  line-height: 8rem;
+}
+
+.form-section .form .input-cc:active, .form-section .form .input-cc:focus {
+  border-bottom: 2px solid #438A5E;
+  -webkit-transition: .2s;
+  transition: .2s;
+  outline: none;
+}
+
+.form-section .form .input-cc::-webkit-input-placeholder {
+  color: #AFAFAF;
+}
+
+.form-section .form .input-cc:-ms-input-placeholder {
+  color: #AFAFAF;
+}
+
+.form-section .form .input-cc::-ms-input-placeholder {
+  color: #AFAFAF;
+}
+
+.form-section .form .input-cc::placeholder {
+  color: #AFAFAF;
+}
+
+.form-section .form .submit-cc {
+  font-family: 'Ubuntu';
+  position: relative;
+  font-style: normal;
+  font-size: 2.8rem;
+  line-height: 3.5rem;
+  color: #438A5E;
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+.form-section .form .submit-cc::after {
+  content: '';
+  background-image: url("../img/arrow_r_g.svg");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 4.4rem;
+  height: 2.4rem;
+  position: absolute;
+  top: 0.8rem;
+  left: 16.5rem;
+}
+
+.form-section .form .submit-cc:hover {
+  color: #AFAFAF;
+}
+
+.form-section .form .submit-cc:hover::after {
   background-image: url("../img/arrow_r_hover.svg");
 }
 
@@ -1227,6 +1370,37 @@ a:hover {
 }
 
 .footer .down .write:hover::after {
+  background-image: url("../img/arrow_r_hover.svg");
+}
+
+.footer .down .write-cc {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-size: 2.8rem;
+  line-height: 3.5rem;
+  color: #438A5E;
+  text-transform: lowercase;
+  margin: 0 8rem 0 0;
+}
+
+.footer .down .write-cc::after {
+  content: '';
+  background-image: url("../img/arrow_r_g.svg");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 4.4rem;
+  height: 2.4rem;
+  position: absolute;
+  top: 18.9rem;
+  right: 1.5rem;
+}
+
+.footer .down .write-cc:hover {
+  color: #AFAFAF;
+}
+
+.footer .down .write-cc:hover::after {
   background-image: url("../img/arrow_r_hover.svg");
 }
 

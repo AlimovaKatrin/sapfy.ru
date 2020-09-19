@@ -9,8 +9,11 @@
             font-size: 2.8rem
             margin: 0 0 3rem 0         
 
-            span
+            .number__hover
                 color: $mainColor1
+
+            .number__hover-cc
+                color: $mainColor2
 
         .checkboxes
             display: flex
@@ -103,6 +106,50 @@
             &::after
                 content: ''
                 background-image: url('../img/arrow_r.svg')
+                display: flex
+                width: 4.4rem
+                height: 2.4rem
+                position: absolute
+                top: 0.8rem
+                left: 16.5rem
+
+            &:hover
+                color: $grayColor
+
+            &:hover::after
+                background-image: url('../img/arrow_r_hover.svg')
+
+        .input-cc
+            width: 100%
+            border: none
+            border-bottom: 1px solid $lightGrayColor
+            margin: 4rem 0 10rem 0
+            font-size: 2.4rem
+            outline: none
+            line-height: 8rem
+
+            &:active, &:focus                
+                border-bottom: 2px solid $mainColor2
+                transition: .2s
+                outline: none
+
+            &::placeholder
+                color: $grayColor
+
+        .submit-cc
+            font-family: 'Ubuntu'
+            position: relative
+            font-style: normal
+            font-size: 2.8rem
+            line-height: 3.5rem
+            color: $mainColor2
+            border: none
+            background: none
+            padding: 0
+
+            &::after
+                content: ''
+                background-image: url('../img/arrow_r_g.svg')
                 display: flex
                 width: 4.4rem
                 height: 2.4rem
