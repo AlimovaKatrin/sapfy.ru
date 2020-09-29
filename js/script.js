@@ -204,14 +204,6 @@ if (sessionStorage.getItem('showPreloader') == null) {
     loader();
 }
 
-// Simple Parallax
-let image = document.getElementsByClassName('image__item');
-new simpleParallax(image, {
-    delay: .3,
-    transition: 'cubic-bezier(0,0,0,0.2)'
-});
-
-
 // Smooth Scroll
 SmoothScroll({
     animationTime: 900,

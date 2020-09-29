@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/animate.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Sapfy — UX/UI дизайнер</title>
     <link rel="icon" type="image/png" href="favicon.png">
@@ -15,9 +15,10 @@
     <div class="wrap">
         <header class="header">
             <nav class="menu">
-                <a class="menu__link" href="http://sapfy.ru/">
+                <a class="menu__link" href="https://sapfy.ru">
                     Sapfy
                 </a>
+
 
                 <a class="menu__music d-none d-lg-block" href="#">
                     <span class="menu__note" data-hover="♬">♬</span>
@@ -27,13 +28,13 @@
             </nav>
         </header>
 
-        <main class="main">
+        <main class="indent main">
 
             <section class="first-section">
                 <div class="row">
                     <div class="col-md-12 col-lg-6">
                         <section class="welcome">
-                            <a href="index.html" class="welcome__back scroll">назад</a>
+                            <a href="https://sapfy.ru/" class="welcome__back scroll">назад</a>
                             <h1 class="welcome__general scroll">Пишите мне</h1>
                             <p class="welcome__info scroll">Я всегда готова ответить на ваши вопросы по почте и в
                                 социальных сетях. Также вы можете заполнить форму ниже — я отвечу в течение рабочего
@@ -54,50 +55,54 @@
             </section>
 
             <section class="form-section">
-                <form action="" method="post" class="form">
-                    <p class="form__title scroll"><span class="number__hover">1.</span> Меня интересует</p>
+                <form action="https://formspree.io/moqpvnvn" method="post" class="form">
+                    <p class="form__title scroll"><span>1.</span> Меня интересует</p>
 
                     <div class="checkboxes">
                         <div class="checkbox-item scroll scroll">
-                            <input type="checkbox" class="checkbox" name="interested" value="Дизайн сайта" id="site">
+                            <input type="checkbox" class="checkbox" name="Интересует" value="Дизайн сайта" id="site">
                             <label for="site" data-name="Дизайн сайта"></label>
                         </div>
 
                         <div class="checkbox-item scroll">
-                            <input type="checkbox" class="checkbox app" name="interested" value="Дизайн приложнения"
+                            <input type="checkbox" class="checkbox app" name="Интересует" value="Дизайн приложнения"
                                 id="app">
                             <label for="app" data-name="Дизайн приложнения"></label>
                         </div>
 
                         <div class="checkbox-item scroll">
-                            <input type="checkbox" class="checkbox" name="interested" value="Брендинг" id="brend">
+                            <input type="checkbox" class="checkbox" name="Интересует" value="Брендинг" id="brend">
                             <label for="brend" data-name="Брендинг"></label>
                         </div>
 
                         <div class="checkbox-item scroll">
-                            <input type="checkbox" class="checkbox" name="interested" value="Логотип" id="logo">
+                            <input type="checkbox" class="checkbox" name="Интересует" value="Логотип" id="logo">
                             <label for="logo" data-name="Логотип"></label>
                         </div>
 
                         <div class="checkbox-item scroll">
-                            <input type="checkbox" class="checkbox" name="interested" value="Сайт под ключ" id="full">
+                            <input type="checkbox" class="checkbox" name="Интересует" value="Сайт под ключ" id="full">
                             <label for="full" data-name="Сайт под ключ"></label>
                         </div>
 
                         <div class="checkbox-item scroll">
-                            <input type="checkbox" class="checkbox" name="interested" value="Другое" id="other">
+                            <input type="checkbox" class="checkbox" name="Интересует" value="Другое" id="other">
                             <label for="other" data-name="Другое"></label>
                         </div>
                     </div>
 
-                    <p class="form__title scroll"><span class="number__hover">2.</span> Расскажите о своем проекте</p>
-                    <input type="text" class="form form__input scroll" placeholder="Опишите свой проект">
-                    <p class="form__title scroll"><span class="number__hover">3.</span> Ваше имя</p>
-                    <input type="text" class="form form__input scroll" placeholder="Напишите ваше имя" required>
-                    <p class="form__title scroll"><span class="number__hover">4.</span> Ваше email</p>
-                    <input type="text" class="form form__input scroll" placeholder="Напишите ваше email" required>
-                    <p class="form__title scroll"><span class="number__hover">5.</span> Планируемый бюджет</p>
-                    <input type="text" class="form form__input scroll" placeholder="Напишите ваш бюджет">
+                    <p class="form__title scroll"><span>2.</span> Расскажите о своем проекте</p>
+                    <input type="text" class="form form__input scroll" name="Описание проекта"
+                        placeholder="Опишите свой проект">
+                    <p class="form__title scroll"><span>3.</span> Ваше имя</p>
+                    <input type="text" class="form form__input scroll" name="Имя клиента"
+                        placeholder="Напишите ваше имя" required>
+                    <p class="form__title scroll"><span>4.</span> Ваше email</p>
+                    <input type="text" class="form form__input scroll" name="Email клиента"
+                        placeholder="Напишите ваше email" required>
+                    <p class="form__title scroll"><span>5.</span> Планируемый бюджет</p>
+                    <input type="text" class="form form__input scroll" name="Бюджет клиента"
+                        placeholder="Напишите ваш бюджет">
 
                     <button type="submit" class="form form__submit scroll">Отправить</button>
                 </form>
@@ -126,7 +131,7 @@
 
                 <div class="col-md-12 col-lg-12">
                     <section class="down">
-                        <p class="year">2020</p>
+                        <p class="year">— 2020</p>
                     </section>
                 </div>
             </div>
@@ -135,9 +140,7 @@
     </div>
 
     <!-- Scripts -->
-    <script defer src="js/parallax.min.js"></script>
     <script defer src="js/smoothScroll.min.js"></script>
-    <script defer src="js/simpleParallax.min.js"></script>
     <script defer src="js/script.js"></script>
 </body>
 
