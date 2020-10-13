@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/animate.min.css">
     <link rel="stylesheet" href="./css/style.css">
@@ -28,7 +28,8 @@
                     <span class="menu__note" data-hover="♬">♬</span>
                 </a>
 
-                <audio src="audio/music.mp3"></audio>
+                <audio loop src="audio/music.mp3"></audio>
+                <img class="bird bird-rotate" src="./img/bird.svg">
             </nav>
         </header>
 
@@ -39,7 +40,7 @@
                     <div class="col-md-12 col-lg-6">
                         <section class="welcome">
                             <h1 class="welcome__general scroll">UX/UI дизайнер</h1>
-                            <p class="welcome__info scroll">Привет, я Света — UX/UI дизайнер из Санкт-Петербурга.
+                            <p class="welcome__info scroll">Привет, я Света — UX/UI дизайнер <br> из Санкт-Петербурга.
                             </p>
                         </section>
 
@@ -77,13 +78,13 @@
                                 <img src="./img/bg_5.png">
                             </div>
 
-                            <div data-depth="0.07">
-                                <img src="./img/bg_6.png">
+                            <div data-depth-x="0.15">
+                                <img class="ship scene-one__ship" src="./img/bg_6.png">
                             </div>
 
-                            <div data-depth="0.15">
+                            <!-- <div data-depth="0.15">
                                 <img src="./img/bg_7.png">
-                            </div>
+                            </div> -->
 
                         </div>
                     </div>
@@ -100,9 +101,9 @@
                         </a>
                     </div>
 
-                    <div class="col-md-12 col-lg-6 image">
+                    <div class="col-md-12 col-lg-6 image-portfolio">
                         <div>
-                            <img class="image__item" src="./img/picture/image_1.png">
+                            <img class="image-portfolio__item" src="./img/picture/image_1.png">
                         </div>
                     </div>
 
@@ -134,7 +135,7 @@
                         </a>
                     </div>
 
-                    <div class="col-md-12 col-lg-5">
+                    <div class="col-md-12 col-lg-5 order-2 order-sm-1">
                         <section class="block">
 
                             <p class="block__info scroll">Разработка этикетки для отечественного бренда, выпускающего
@@ -150,9 +151,9 @@
                         </section>
                     </div>
 
-                    <div class="col-md-12 col-lg-6 offset-lg-1 image">
+                    <div class="col-md-12 col-lg-6 offset-lg-1 order-1 order-sm-2 image-portfolio">
                         <div>
-                            <img class="image__item" src="./img/picture/image_2.png">
+                            <img class="image-portfolio__item" src="./img/picture/image_2.png">
                         </div>
                     </div>
 
@@ -245,7 +246,7 @@
                 </div>
             </section>
 
-            <section class="mini-section-bottom">
+            <section class="border-none mini-section">
                 <div class="row">
                     <div class="col-md-12 col-lg-12 items block">
                         <a class="block__link" href="badee">
@@ -285,14 +286,15 @@
                             </div>
 
                             <div data-depth="0.15">
-                                <img src="./img/bg(2)_5.png">
+                                <img class="ship_2 scene-one__ship_2" src="./img/bg(2)_5.png">
                             </div>
                         </div>
                     </div>
 
                     <div class="col-md-12 col-lg-6 right-block">
                         <h2 class="right-block__title scroll">Stack</h2>
-                        <p class="right-block__info scroll indents_bottom">Основные инструменты, с которыми я работаю.
+                        <p class="right-block__info scroll indents_bottom">Основные инструменты, с которыми <br>я
+                            работаю.
                         </p>
 
                         <div class="col-12 right-item">
@@ -370,6 +372,8 @@
     <script defer src="js/smoothScroll.min.js"></script>
     <script defer src="js/simpleParallax.min.js"></script>
     <script defer src="js/script.js"></script>
+
+
 </body>
 
 </html>

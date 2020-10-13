@@ -9,13 +9,20 @@
         margin: 0 0 2rem 0
 
     &__description
-        font-family: 'Ubuntu Light'
+        font-family: 'MullerUltraLight'
         font-style: normal
         font-weight: 300
-        font-size: 2.8rem
+        font-size: $p
         line-height: 4rem
 
-// Medium devices (tablets, 768px and down)
+@media (max-width: 1370px)
+    .future
+
+        &__title
+            font-size: 10rem
+        &__description
+            font-size: 2.8rem
+
 @media (max-width: 769px)
     .future
         padding: 0 0 20rem 0
@@ -28,7 +35,26 @@
             margin: 0 0 2rem 0
 
         &__description
-            font-family: 'Ubuntu Light'
+            font-family: 'MullerUltraLight'
+            font-style: normal
+            font-weight: 300
+            font-size: 2.8rem
+            line-height: 4rem
+
+@media (max-width: 425px)
+
+    .future
+        padding: 0 0 20rem 0
+
+        &__title
+            font-family: 'Colus'
+            font-style: normal
+            font-weight: normal
+            font-size: 4rem
+            margin: 0 0 2rem 0
+
+        &__description
+            font-family: 'MullerUltraLight'
             font-style: normal
             font-weight: 300
             font-size: 2.8rem

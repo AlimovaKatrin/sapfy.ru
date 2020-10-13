@@ -35,7 +35,9 @@ const numbers = document.getElementsByClassName('number__hover');
 const inputs = document.getElementsByClassName('form__input');
 
 note.addEventListener('click', function () {
-    note.classList.toggle('menu__note_action');
+    note.classList.toggle('menu__note_action'),
+    ship = document.querySelector('.ship');
+    ship_2 = document.querySelector('.ship_2');
 
     if (note.classList.contains('menu__note_action')) {
         file.play();
@@ -78,7 +80,8 @@ note.addEventListener('click', function () {
             }
         }
     } else {
-        file.pause();
+        file.pause();        
+
 
         if (logo != undefined) {
             logo.style.color = '#C1433C';
@@ -113,6 +116,13 @@ note.addEventListener('click', function () {
                 inputs[index].classList.remove('input-cc');
             }
         }
+        
+    }
+    if(ship != undefined) {
+        ship.classList.toggle('action');
+    }
+    if(ship_2 != undefined) {
+        ship_2.classList.toggle('action_2');
     }
 })
 

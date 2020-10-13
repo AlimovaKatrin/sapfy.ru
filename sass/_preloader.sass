@@ -1,6 +1,6 @@
-.preloader 
+.preloader
 	position: fixed
-	padding: 40rem 0 10rem 0
+	padding: 40rem 0 10rem 10rem
 	width: 100vw
 	height: 100vh
 	background: white
@@ -12,13 +12,18 @@
 	font-size: 12rem
 	line-height: 110%
 	margin: 0 0 2rem 0
-	z-index: 99999999999999
-	left: 10rem
+	z-index: 999999
+	left: 0rem
 
-.show 
-	visibility: visible 
-	opacity: 1 
-	
+.show
+	visibility: visible
+	opacity: 1
+
 @media (max-width: 1370px)
-	.preloader 
+	.preloader
 		font-size: 10rem
+
+@media (max-width: 769px)
+	.preloader
+		padding: 36rem 0 10rem 1.5rem
+		font-size: 8rem
