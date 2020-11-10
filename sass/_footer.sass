@@ -1,0 +1,165 @@
+.footer
+    height: 42.5rem
+    padding: 4vw 0 1vw 0
+
+    .copyright
+        display: flex
+        flex-direction: column
+
+        &__item
+            font-family: MullerUltraLight
+            font-style: normal
+            font-weight: 300
+            font-size: $p-small
+            line-height: 130%
+
+    .down
+        font-family: MullerUltraLight
+        display: flex
+        margin: 18rem 0 0 0
+        justify-content: space-between
+        align-items: center
+
+        .year
+            font-style: normal
+            font-weight: 300
+            font-size: $p-small
+            line-height: 130%
+
+        .write
+            font-family: MullerUltraLight
+            font-style: normal
+            font-size: $p
+            line-height: 130%
+            color: $mainColor1
+            font-weight: 600
+            text-transform: lowercase
+            margin: 0 7.5rem 0 0
+
+            &::after
+                content: ''
+                background-image: url('../img/arrow_r.svg')
+                display: flex
+                width: 4.2rem
+                height: 1.7rem
+                position: absolute
+                top: 19.4rem
+                right: 1.5rem
+
+            &:hover
+                color: $grayColor
+
+            &:hover::after
+                background-image: url('../img/arrow_r_hover.svg')
+
+        .write-cc
+            font-family: MullerUltraLight
+            font-style: normal
+            font-size: $p-small
+            line-height: 130%
+            color: $mainColor2
+            text-transform: lowercase
+            margin: 0 7.5rem 0 0
+
+            &::after
+                content: ''
+                background-image: url('../img/arrow_r_g.svg')
+                display: flex
+                width: 4.2rem
+                height: 1.7rem
+                position: absolute
+                top: 19.4rem
+                right: 1.5rem
+
+            &:hover
+                color: $grayColor
+
+            &:hover::after
+                background-image: url('../img/arrow_r_hover.svg')
+
+@media (max-width: 1370px)
+
+    .footer
+        .copyright
+            &__item
+                font-size: 2.4rem
+
+        .down
+            .year
+                font-size: 2.4rem
+
+            .write
+                font-size: 2.8rem
+            .write-cc
+                font-size: 2.4rem
+
+@media (max-width: 769px)
+
+    .footer
+        height: 42.5rem
+        padding: 10rem 0 5rem 0
+
+        .copyright
+            display: flex
+            flex-direction: column
+            margin: 0 0 8rem 0
+
+            &__item
+                font-style: normal
+                font-weight: 300
+                font-size: 2.4rem
+                line-height: 2.8rem
+
+        .down
+            margin: 18rem 0 0 0
+
+            .year
+                font-style: normal
+                font-weight: 300
+                font-size: 2.4rem
+                line-height: 2.8rem
+
+            .write
+                font-family: MullerUltraLight
+                font-style: normal
+                font-size: 2.9rem
+
+                line-height: 3.5rem
+                color: $mainColor1
+                text-transform: lowercase
+                margin: 0 5.5rem 1.5rem 0
+
+                &::after
+                    content: ''
+                    background-image: url('../img/arrow_r.svg')
+                    display: flex
+                    width: 4.2rem
+                    height: 1.6rem
+                    position: absolute
+                    top: 19.1rem
+                    right: 0.2rem
+
+                &:hover
+                    color: $grayColor
+
+                &:hover::after
+                    background-image: url('../img/arrow_r_hover.svg')
+
+@media (max-width: 425px)
+    .footer
+
+        .copyright
+
+            &__item
+
+                font-size: 2.4rem
+
+        .down
+
+            .year
+
+                font-size: 2.4rem
+
+            .write
+
+                font-size: 2.4rem

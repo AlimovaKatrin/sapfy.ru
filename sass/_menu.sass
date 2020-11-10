@@ -1,0 +1,73 @@
+.menu
+    display: flex
+    justify-content: space-between
+
+    .menu__link
+        font-size: $p-small
+        font-family: 'MullerUltraLight'
+        color: $mainColor1
+
+    .menu__music
+        height: 1.6vw
+        line-height: 1.9vw
+        overflow: hidden
+        white-space: nowrap
+        color: $mainColor1
+        font-size: $p-small
+        text-transform: uppercase
+        font-family: 'MullerUltraLight'
+
+        &:active
+            color: #fff
+            text-decoration: none
+
+        .menu__note
+            display: inline-block
+            position: relative
+            transition: transform 0.3s
+            z-index: 100
+
+            &::before
+                display: inline-block
+                width: 100%
+                height: 100%
+                content: attr(data-hover)
+                position: absolute
+                left: 0
+                top: 100%
+                transform: translate3d(0,0,0,)
+                color: #438A5E
+
+        .menu__note_action
+            transform: translateY(-100%)
+
+.bird
+    position: absolute
+    display: block
+    width: 330px
+    right: -44px
+    top: -92px
+
+.bird-rotate
+    animation: 25s linear 0s normal none infinite running rotate
+
+@keyframes rotate
+    0%
+        transform: rotate(0deg)
+    100%
+        transform: rotate(360deg)
+
+@media (max-width: 1370px)
+    .menu
+
+        .menu__link
+            font-size: 2.4rem
+
+        .menu__music
+            height: 1.6vw
+            line-height: 1.9vw
+            font-size: 2.4rem
+
+@media (max-width: 769px)
+    .bird
+        display: none

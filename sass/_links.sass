@@ -1,0 +1,75 @@
+.links
+    display: flex
+
+    &:nth-child(1)
+        justify-content: flex-end
+
+    &__social
+        color: $mainColor1
+        font-family: 'MullerUltraLight'
+        font-style: normal
+        font-weight: 300
+        font-size: $p-small
+        line-height: 130%
+        margin-right: 40px
+        z-index: 10
+
+        &:hover
+            color: $grayColor
+
+        &:last-child
+            margin-right: 0
+
+    &__text
+        color: $mainColor1
+        font-family: 'MullerUltraLight'
+        font-style: normal
+        font-weight: 300
+        font-size: 2.8rem
+        line-height: 2.8rem
+        margin-right: 40px
+        z-index: 10
+
+        &:hover
+            color: $grayColor
+
+        &:last-child
+            margin-right: 0
+
+// Medium devices (tablets, 768px and down)
+
+@media (max-width: 1370px)
+    .links
+
+        &__social
+            font-size: 2.4rem
+
+@media (max-width: 769px)
+
+    .links
+        flex-wrap: wrap
+
+        &:nth-child(1)
+            justify-content: flex-start
+
+        &__social
+            color: $mainColor1
+            font-family: 'MullerUltraLight'
+            font-style: normal
+            font-weight: 300
+            font-size: 2.4rem
+            line-height: 100%
+            margin: 0 4rem 2rem 0
+
+            &:hover
+                color: $grayColor
+
+            &:last-child
+                margin-right: 0
+
+@media (max-width: 425px)
+
+    .links
+
+        &__social
+            font-size: 2.1rem

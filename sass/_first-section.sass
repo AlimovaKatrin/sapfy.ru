@@ -1,0 +1,161 @@
+.first-section
+    padding: 14vw 0 10rem 0
+
+    .welcome
+        position: relative
+        z-index: 10
+
+        &__back
+            position: relative
+            font-family: 'MullerUltraLight'
+            font-style: normal
+            font-size: $p-small
+            line-height: 3.5rem
+            color: $mainColor1
+            text-transform: lowercase
+            margin: 0 0 2rem 5.6rem
+
+            &::after
+                content: ''
+                background-image: url('../img/arrow_l.svg')
+                display: flex
+                width: 4.1rem
+                height: 1.2rem
+                position: absolute
+                top: 1rem
+                left: -5.2rem
+
+            &:hover
+                color: $grayColor
+
+            &:hover::after
+                background-image: url('../img/arrow_l_hover.svg')
+
+        &__back-cc
+            position: relative
+            font-family: 'MullerUltraLight'
+            font-style: normal
+            font-size: 2.8rem
+            line-height: 3.5rem
+            color: $mainColor2
+            text-transform: lowercase
+            margin: 0 0 2rem 5rem
+
+            &::after
+                content: ''
+                background-image: url('../img/arrow_l_g.svg')
+                display: flex
+                width: 4.1rem
+                height: 1.2rem
+                position: absolute
+                top: 1.3rem
+                left: -4.5rem
+
+            &:hover
+                color: $grayColor
+
+            &:hover::after
+                background-image: url('../img/arrow_l_hover.svg')
+
+        &__general
+            font-family: 'Colus'
+            font-style: normal
+            font-weight: normal
+            font-size: $h1
+            color: $blackColor
+            line-height: 110%
+            margin: 0 0 2rem 0
+
+        &__general-small
+            font-family: 'Colus'
+            font-style: normal
+            font-weight: normal
+            font-size: 12rem
+            line-height: 110%
+            margin: 0 0 2rem 0
+
+        &__info
+            font-family: 'MullerUltraLight'
+            font-style: normal
+            font-weight: 300
+            font-size: $p
+            color: $blackColor
+            line-height: 130%
+            margin: 0 0 3rem 0
+
+// Medium devices (tablets, 1370px and down)
+@media (max-width: 1370px)
+    .first-section
+        padding: 15rem 0 10rem 0
+
+        .welcome
+            position: relative
+            z-index: 10
+
+            &__back
+                font-size: 2.4rem
+                &::after
+                    top: 0.6rem
+
+            &__general
+                font-size: 10rem
+
+            &__general-small
+                font-size: 10rem
+
+            &__info
+                font-size: 2.8rem
+
+@media (max-width: 769px)
+
+    .first-section
+        padding: 12.5rem 0 10rem 0
+
+        .welcome
+            position: relative
+            z-index: 10
+
+            &__general
+                font-size: 4.5rem
+
+            &__info
+                font-size: 2.5rem
+
+@media (max-width: 425px)
+
+    .first-section
+        padding: 22rem 0 10rem 0
+
+        .welcome
+            position: relative
+            z-index: 10
+
+            &__general
+                font-size: 6rem
+
+            &__general-small
+                font-size: 4.2rem
+
+            &__info
+                font-size: 2.5rem
+
+@media (max-width: 320px)
+
+    .first-section
+        padding: 15rem 0 10rem 0
+
+        .welcome
+
+            &__back
+                font-size: 2.4rem
+                &::after
+                    top: 0.6rem
+
+            &__general
+                font-size: 5.4rem
+
+            &__general-small
+                font-size: 10rem
+
+            &__info
+                font-size: 2.4rem

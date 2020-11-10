@@ -1,0 +1,27 @@
+.block-tags
+    display: flex
+    flex-wrap: wrap
+
+    &__item
+        font-family: 'MullerUltraLight'
+        font-style: normal
+        font-weight: 300
+        font-size: $p-small
+        line-height: 130%
+        color: $grayColor
+        margin-right: 40px
+
+        &:last-child
+            margin-right: 0
+
+@media (max-width: 1370px)
+    .block-tags
+
+        &__item
+            font-size: 2.4rem
+
+@media (max-width: 425px)
+    .block-tags
+
+        &__item
+            font-size: 2.1rem
