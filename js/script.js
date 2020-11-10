@@ -36,7 +36,7 @@ const inputs = document.getElementsByClassName('form__input');
 
 note.addEventListener('click', function () {
     note.classList.toggle('menu__note_action'),
-    ship = document.querySelector('.ship');
+        ship = document.querySelector('.ship');
     ship_2 = document.querySelector('.ship_2');
 
     if (note.classList.contains('menu__note_action')) {
@@ -80,7 +80,7 @@ note.addEventListener('click', function () {
             }
         }
     } else {
-        file.pause();        
+        file.pause();
 
 
         if (logo != undefined) {
@@ -116,12 +116,12 @@ note.addEventListener('click', function () {
                 inputs[index].classList.remove('input-cc');
             }
         }
-        
+
     }
-    if(ship != undefined) {
+    if (ship != undefined) {
         ship.classList.toggle('action');
     }
-    if(ship_2 != undefined) {
+    if (ship_2 != undefined) {
         ship_2.classList.toggle('action_2');
     }
 })
@@ -206,7 +206,7 @@ const loader = (_success) => {
                     return _success();
                 }
             }
-        }, 120);
+        }, 100);
 }
 // Session preloader
 if (sessionStorage.getItem('showPreloader') == null) {
